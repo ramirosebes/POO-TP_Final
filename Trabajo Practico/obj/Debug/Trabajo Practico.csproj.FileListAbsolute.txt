@@ -1,0 +1,54 @@
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Form1.Form1.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Practica\Trabajo Practico\obj\Debug\Form1.Form2.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Sign_In.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Sign_Up.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Sign_In.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Sign_Up.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Administrador_de_Usuarios.resources
+C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Store.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Administrador_de_Usuarios.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Store.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe.config
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.exe
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\bin\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.AssemblyReference.cache
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.SuggestedBindingRedirects.cache
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Administrador_de_Usuarios.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Properties.Resources.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Store.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.GenerateResource.cache
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CoreCompileInputs.cache
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.exe
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.pdb
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Log_In.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Register.resources
