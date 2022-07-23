@@ -93,6 +93,16 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_share_icon_icon_design_cafe_shop_cdr_text_retail {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-share-icon-icon-design-cafe-shop-cdr-text-retail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sed_18_512 {
             get {
                 object obj = ResourceManager.GetObject("Sed-18-512", resourceCulture);

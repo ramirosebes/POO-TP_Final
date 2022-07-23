@@ -18,7 +18,8 @@ namespace Trabajo_Practico
         public Log_In()
         {
             InitializeComponent();
-
+            txt_email.Clear();
+            txt_contrasena.Clear();
         }
 
         static public string conexion_database = "Data Source=DESKTOP-59EHRTN;Initial Catalog=dbpractica;Integrated Security=True";
