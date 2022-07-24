@@ -363,7 +363,9 @@
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-share-icon-icon-design-cafe-shop-cdr-text-retail.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\intel-core-i9-12900k-52-ghz-500x500.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

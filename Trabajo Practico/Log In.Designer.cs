@@ -98,7 +98,7 @@
             this.lbl_crearCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbl_crearCuenta.Font = new System.Drawing.Font("Bahnschrift", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_crearCuenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.lbl_crearCuenta.Location = new System.Drawing.Point(98, 377);
+            this.lbl_crearCuenta.Location = new System.Drawing.Point(98, 367);
             this.lbl_crearCuenta.Name = "lbl_crearCuenta";
             this.lbl_crearCuenta.Size = new System.Drawing.Size(106, 16);
             this.lbl_crearCuenta.TabIndex = 3;
@@ -156,7 +156,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label1.Location = new System.Drawing.Point(127, 406);
+            this.label1.Location = new System.Drawing.Point(126, 393);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 23);
             this.label1.TabIndex = 4;
@@ -180,7 +180,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(300, 480);
+            this.ClientSize = new System.Drawing.Size(300, 454);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox3);

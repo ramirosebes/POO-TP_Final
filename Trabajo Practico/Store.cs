@@ -133,46 +133,6 @@ namespace Trabajo_Practico
             sw.Close();
         }
 
-        private void btn_volver_atras_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btn_microprocesador_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormMicroprocesador(),sender);
-        }
-
-        private void btn_motherboard_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormMotherboard(), sender);
-        }
-
-        private void btn_placa_de_video_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormPlacaDeVideo(), sender);
-        }
-
-        private void btn_memoria_ram_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormMemoriaRAM(), sender);
-        }
-
-        private void bnt_almacenamiento_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormAlmacenamiento(), sender);
-        }
-
-        private void btn_fuente_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormFuente(), sender);
-        }
-
-        private void btn_gabinete_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormGabinete(), sender);
-        }
-
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
@@ -189,21 +149,6 @@ namespace Trabajo_Practico
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit(); 
-        }
-
-        private void btn_vacio_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormInicio(), sender);
-        }
-
-        private void panelDesktopPane_Paint(object sender, PaintEventArgs e)
-        {
-            //
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
@@ -224,6 +169,76 @@ namespace Trabajo_Practico
         private void panelTitleBar_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
+        }
+
+        private void panelTitleBar_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void panelTitleBar_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panelTitleBar_MouseUp_1(object sender, MouseEventArgs e)
+        {
+            mov = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonVolverAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonMicroprocesador_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormMicroprocesador(), sender);
+        }
+
+        private void buttonMotherboard_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormMotherboard(), sender);
+        }
+
+        private void buttonMemoria_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormMemoriaRAM(), sender);
+        }
+
+        private void buttonPlacaDeVideo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormPlacaDeVideo(), sender);
+        }
+
+        private void buttonAlmacenamiento_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormAlmacenamiento(), sender);
+        }
+
+        private void buttonFuente_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormFuente(), sender);
+        }
+
+        private void buttonGabinete_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormGabinete(), sender);
         }
     }
 }

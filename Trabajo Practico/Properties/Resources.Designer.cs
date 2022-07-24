@@ -83,6 +83,16 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap intel_core_i9_12900k_52_ghz_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("intel-core-i9-12900k-52-ghz-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_2 {
             get {
                 object obj = ResourceManager.GetObject("lock-2", resourceCulture);
