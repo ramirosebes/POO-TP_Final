@@ -14,7 +14,13 @@ namespace Trabajo_Practico
 {
     public partial class Administrador_de_Usuarios : Form
     {
+        //Varaiable Global
         public string conexion_database;
+
+        //Move Bar
+        int mov;
+        int movX;
+        int movY;
 
         public Administrador_de_Usuarios(string conexion_database)
         {
@@ -530,6 +536,26 @@ namespace Trabajo_Practico
             txt_apellido.Enabled = false;
             txt_email.Enabled = false;
             txt_contrasena.Enabled = false;
+        }
+
+        private void panelMove_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void panelMove_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panelMove_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

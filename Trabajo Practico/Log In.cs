@@ -15,6 +15,11 @@ namespace Trabajo_Practico
 {
     public partial class Log_In : Form
     {
+        //Move Bar
+        int mov;
+        int movX;
+        int movY;
+
         public Log_In()
         {
             InitializeComponent();
@@ -134,6 +139,26 @@ namespace Trabajo_Practico
         private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void panel3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panel3_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

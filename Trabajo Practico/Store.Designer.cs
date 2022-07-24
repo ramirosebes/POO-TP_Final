@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btn_volver_atras = new System.Windows.Forms.Button();
-            this.btn_salir = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.btn_vacio = new System.Windows.Forms.Button();
             this.btn_gabinete = new System.Windows.Forms.Button();
             this.btn_fuente = new System.Windows.Forms.Button();
             this.bnt_almacenamiento = new System.Windows.Forms.Button();
@@ -40,6 +36,10 @@
             this.btn_placa_de_video = new System.Windows.Forms.Button();
             this.btn_motherboard = new System.Windows.Forms.Button();
             this.btn_microprocesador = new System.Windows.Forms.Button();
+            this.bntVolverAtras = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btn_vacio = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.lbl_store = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
@@ -59,68 +59,15 @@
             this.panelMenu.Controls.Add(this.btn_placa_de_video);
             this.panelMenu.Controls.Add(this.btn_motherboard);
             this.panelMenu.Controls.Add(this.btn_microprocesador);
-            this.panelMenu.Controls.Add(this.btn_volver_atras);
-            this.panelMenu.Controls.Add(this.btn_salir);
+            this.panelMenu.Controls.Add(this.bntVolverAtras);
+            this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btn_vacio);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(170, 676);
+            this.panelMenu.Size = new System.Drawing.Size(170, 703);
             this.panelMenu.TabIndex = 1;
-            // 
-            // btn_volver_atras
-            // 
-            this.btn_volver_atras.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_volver_atras.FlatAppearance.BorderSize = 0;
-            this.btn_volver_atras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_volver_atras.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_volver_atras.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btn_volver_atras.Location = new System.Drawing.Point(0, 596);
-            this.btn_volver_atras.Name = "btn_volver_atras";
-            this.btn_volver_atras.Size = new System.Drawing.Size(170, 40);
-            this.btn_volver_atras.TabIndex = 9;
-            this.btn_volver_atras.Text = "Volver Atras";
-            this.btn_volver_atras.UseVisualStyleBackColor = true;
-            this.btn_volver_atras.Click += new System.EventHandler(this.btn_volver_atras_Click);
-            // 
-            // btn_salir
-            // 
-            this.btn_salir.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_salir.FlatAppearance.BorderSize = 0;
-            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salir.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btn_salir.Location = new System.Drawing.Point(0, 636);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(170, 40);
-            this.btn_salir.TabIndex = 8;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = true;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
-            this.panelLogo.Controls.Add(this.lbl_store);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(170, 89);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // btn_vacio
-            // 
-            this.btn_vacio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_vacio.FlatAppearance.BorderSize = 0;
-            this.btn_vacio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_vacio.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_vacio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btn_vacio.Location = new System.Drawing.Point(0, 89);
-            this.btn_vacio.Name = "btn_vacio";
-            this.btn_vacio.Size = new System.Drawing.Size(170, 62);
-            this.btn_vacio.TabIndex = 0;
-            this.btn_vacio.Text = "Home";
-            this.btn_vacio.UseVisualStyleBackColor = true;
             // 
             // btn_gabinete
             // 
@@ -227,6 +174,61 @@
             this.btn_microprocesador.UseVisualStyleBackColor = true;
             this.btn_microprocesador.Click += new System.EventHandler(this.btn_microprocesador_Click);
             // 
+            // bntVolverAtras
+            // 
+            this.bntVolverAtras.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bntVolverAtras.FlatAppearance.BorderSize = 0;
+            this.bntVolverAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntVolverAtras.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntVolverAtras.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.bntVolverAtras.Location = new System.Drawing.Point(0, 623);
+            this.bntVolverAtras.Name = "bntVolverAtras";
+            this.bntVolverAtras.Size = new System.Drawing.Size(170, 40);
+            this.bntVolverAtras.TabIndex = 9;
+            this.bntVolverAtras.Text = "Volver Atras";
+            this.bntVolverAtras.UseVisualStyleBackColor = true;
+            this.bntVolverAtras.Click += new System.EventHandler(this.btn_volver_atras_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnSalir.Location = new System.Drawing.Point(0, 663);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(170, 40);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btn_vacio
+            // 
+            this.btn_vacio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_vacio.FlatAppearance.BorderSize = 0;
+            this.btn_vacio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_vacio.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vacio.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btn_vacio.Location = new System.Drawing.Point(0, 89);
+            this.btn_vacio.Name = "btn_vacio";
+            this.btn_vacio.Size = new System.Drawing.Size(170, 62);
+            this.btn_vacio.TabIndex = 0;
+            this.btn_vacio.Text = "Home";
+            this.btn_vacio.UseVisualStyleBackColor = true;
+            this.btn_vacio.Click += new System.EventHandler(this.btn_vacio_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
+            this.panelLogo.Controls.Add(this.lbl_store);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(170, 89);
+            this.panelLogo.TabIndex = 0;
+            // 
             // lbl_store
             // 
             this.lbl_store.AutoSize = true;
@@ -259,13 +261,16 @@
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(809, 89);
             this.panelTitleBar.TabIndex = 2;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            this.panelTitleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseMove);
+            this.panelTitleBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseUp);
             // 
             // panelDesktopPane
             // 
             this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPane.Location = new System.Drawing.Point(170, 89);
             this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(809, 587);
+            this.panelDesktopPane.Size = new System.Drawing.Size(809, 614);
             this.panelDesktopPane.TabIndex = 3;
             // 
             // Store
@@ -273,7 +278,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(979, 676);
+            this.ClientSize = new System.Drawing.Size(979, 703);
             this.Controls.Add(this.panelDesktopPane);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
@@ -301,8 +306,8 @@
         private System.Windows.Forms.Button btn_placa_de_video;
         private System.Windows.Forms.Button btn_motherboard;
         private System.Windows.Forms.Button btn_microprocesador;
-        private System.Windows.Forms.Button btn_volver_atras;
-        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Button bntVolverAtras;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btn_vacio;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label lbl_store;

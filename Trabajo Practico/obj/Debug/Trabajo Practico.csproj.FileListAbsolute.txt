@@ -85,3 +85,11 @@ C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\bin\Debug\System.Text.E
 C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.Fody.CopyLocal.cache
 C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CopyComplete
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormMicroprocesador.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormAlmacenamiento.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormFuente.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormGabinete.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormInicio.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormMemoriaRAM.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormMotherboard.resources
+C:\Users\ramir\Desktop\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormPlacaDeVideo.resources

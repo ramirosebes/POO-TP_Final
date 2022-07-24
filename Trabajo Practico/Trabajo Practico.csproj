@@ -217,6 +217,54 @@
     <Compile Include="Administrador de Usuarios.Designer.cs">
       <DependentUpon>Administrador de Usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormAlmacenamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAlmacenamiento.Designer.cs">
+      <DependentUpon>FormAlmacenamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFuente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFuente.Designer.cs">
+      <DependentUpon>FormFuente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGabinete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGabinete.Designer.cs">
+      <DependentUpon>FormGabinete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMemoriaRAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMemoriaRAM.Designer.cs">
+      <DependentUpon>FormMemoriaRAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMicroprocesador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMicroprocesador.Designer.cs">
+      <DependentUpon>FormMicroprocesador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMotherboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMotherboard.Designer.cs">
+      <DependentUpon>FormMotherboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPlacaDeVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPlacaDeVideo.Designer.cs">
+      <DependentUpon>FormPlacaDeVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +287,30 @@
     </Compile>
     <EmbeddedResource Include="Administrador de Usuarios.resx">
       <DependentUpon>Administrador de Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAlmacenamiento.resx">
+      <DependentUpon>FormAlmacenamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFuente.resx">
+      <DependentUpon>FormFuente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGabinete.resx">
+      <DependentUpon>FormGabinete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMemoriaRAM.resx">
+      <DependentUpon>FormMemoriaRAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMicroprocesador.resx">
+      <DependentUpon>FormMicroprocesador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMotherboard.resx">
+      <DependentUpon>FormMotherboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPlacaDeVideo.resx">
+      <DependentUpon>FormPlacaDeVideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log In.resx">
       <DependentUpon>Log In.cs</DependentUpon>
@@ -291,9 +363,7 @@
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-share-icon-icon-design-cafe-shop-cdr-text-retail.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

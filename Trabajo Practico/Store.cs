@@ -19,15 +19,22 @@ namespace Trabajo_Practico
 
         //Variables global
         public string email_global;
+        string sender_auxiliar;
+
+        //Move
+        int mov;
+        int movX;
+        int movY;
 
         public Store(string email_global)
         {
             InitializeComponent();
+            OpenChildForm(new Forms.FormInicio(), sender_auxiliar);
         }
 
         private void Store_Load(object sender, EventArgs e)
         {
-            
+            this.Location = Screen.AllScreens[1].WorkingArea.Location;
         }
 
         static public KeyPressEventArgs KeyPressSoloNumeros(KeyPressEventArgs e)
@@ -126,11 +133,6 @@ namespace Trabajo_Practico
             sw.Close();
         }
 
-        private void btn_salir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btn_volver_atras_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -138,40 +140,40 @@ namespace Trabajo_Practico
 
         private void btn_microprocesador_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormMicroprocesador(),sender);
         }
 
         private void btn_motherboard_Click_1(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormMotherboard(), sender);
         }
 
         private void btn_placa_de_video_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormPlacaDeVideo(), sender);
         }
 
         private void btn_memoria_ram_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormMemoriaRAM(), sender);
         }
 
         private void bnt_almacenamiento_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormAlmacenamiento(), sender);
         }
 
         private void btn_fuente_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormFuente(), sender);
         }
 
         private void btn_gabinete_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormGabinete(), sender);
         }
 
-        private void openChildForm(Form childForm, object btnSender)
+        private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             {
@@ -187,6 +189,41 @@ namespace Trabajo_Practico
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
+
+        private void btn_vacio_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormInicio(), sender);
+        }
+
+        private void panelDesktopPane_Paint(object sender, PaintEventArgs e)
+        {
+            //
+        }
+
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY= e.Y;
+        }
+
+        private void panelTitleBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panelTitleBar_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

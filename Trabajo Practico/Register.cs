@@ -15,8 +15,13 @@ namespace Trabajo_Practico
 {
     public partial class Register : Form
     {
-
+        //Variable Global
         public string conexion_database;
+
+        //Move Bar
+        int mov;
+        int movX;
+        int movY;
 
         public Register(string conexion_database)
         {
@@ -226,6 +231,26 @@ namespace Trabajo_Practico
             {
                 MessageBox.Show("Error al enviar");
             }
+        }
+
+        private void panelMove_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void panelMove_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void panelMove_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }
