@@ -28,6 +28,7 @@ namespace Trabajo_Practico
         }
 
         static public string conexion_database = "Data Source=DESKTOP-59EHRTN;Initial Catalog=dbpractica;Integrated Security=True";
+        static public string email_global;
         
 
         private void btn_iniciarSesion_Click(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace Trabajo_Practico
                 }
                 else
                 {
+                    email_global = txt_email.Text;
                     //string email_global = txt_email.Text;
                     Store frm = new Store(/*email_global*/);
                     frm.ShowDialog();

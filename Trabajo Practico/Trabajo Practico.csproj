@@ -408,6 +408,78 @@
   <ItemGroup>
     <None Include="Resources\1000-51-500x500.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMK16GX4M2B3000C15-Gallery-VENG-LPX-BLK-02-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMH16GX4M2E3200C16b-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x16tuf-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CORSAIRPLATINUM1-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\869_gallery_01-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BL16G32C16U4BL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-1-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GB-N2060D6-6GD2-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6600DUAL2-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6700XTEAGLE2-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd-wd161kryz-16tb-3.5-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1530198259_st8000vn0022_01-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CT1000P5PSSD8-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MP600500-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\109466-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4288-gigabyte-gp-ap1200pm-1200w-80-plus-platinum-full-modular-especificaciones-300x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CP-9020139-NA-Gallery-gallery-HX1000-02-300x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CP-9020188-NA-Gallery-RMx-White-850-01-300x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CC-9011226-WW-Gallery-7000X-RGB-BLACK-01-300x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-1-300x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eclipse_P200A_DRGB_01-300x300.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

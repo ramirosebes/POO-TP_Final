@@ -19,12 +19,25 @@ namespace Trabajo_Practico
         private Form activeForm;
 
         //Variables global
-        public string email_global;
         string sender_auxiliar;
         static public double seleccionMicroprocesadorDouble = 0;
         static public string seleccionMicroprocesadorString = "";
         static public double seleccionMotherboardDouble = 0;
         static public string seleccionMotherboardString = "";
+        static public double seleccionMemoriaDouble = 0;
+        static public string seleccionMemoriaString = "";
+        static public double seleccionPlacaDeVideoDouble = 0;
+        static public string seleccionPlacaDeVideoString = "";
+        static public double seleccionAlmacenamientoDouble = 0;
+        static public string seleccionAlmacenamientoString = "";
+        static public double seleccionFuenteDouble = 0;
+        static public string seleccionFuenteString = "";
+        static public double seleccionGabineteDouble = 0;
+        static public string seleccionGabineteString = "";
+
+        //static public double subTotal = seleccionMicroprocesadorDouble + seleccionMotherboardDouble + seleccionMemoriaDouble + seleccionPlacaDeVideoDouble + seleccionAlmacenamientoDouble + seleccionFuenteDouble + seleccionGabineteDouble;
+        //static public double impuesto = subTotal * 0.21;
+        //static public double total = subTotal + impuesto;
 
         //Move
         int mov;
@@ -78,7 +91,8 @@ namespace Trabajo_Practico
             string email, contrasena;
             email = "uaiprogramacion@outlook.com";
             contrasena = "programacionpruebas321";
-            string path = @"C:\Users\ramir\Desktop\Trabajo Practico\Orden de compra\" + "Orden de compra n°" + ".txt"; // Establecer nueva ruta
+            string path = @"C:\Users\ramir\Desktop\Trabajo Practico\Orden de compra\" + "Orden de compra" + ".txt"; // Establecer nueva ruta
+
             //Body
             string subject = "Orden de compra";
             string body = "Gracias por su compra";
@@ -87,7 +101,7 @@ namespace Trabajo_Practico
 
             MailMessage msg = new MailMessage();
 
-            msg.To.Add("uramirosebes@gmail.com");
+            msg.To.Add(Log_In.email_global);
             msg.Subject = subject;
             msg.SubjectEncoding = Encoding.UTF8;
             msg.Body = body;
@@ -105,13 +119,13 @@ namespace Trabajo_Practico
             try
             {
                 cliente.Send(msg);
-                MessageBox.Show("Se envio el email correctamente.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                /*DialogResult MensajeFinal = MessageBox.Show("Se envio el email correctamente.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if (MensajeFinal == DialogResult.OK)
+                //MessageBox.Show("Se envio el email correctamente.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult mensajeEmail = MessageBox.Show("Se envio el email correctamente.", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (mensajeEmail == DialogResult.OK)
                 {
                     this.Close();
                     Application.Exit();
-                }*/
+                }
             }
             catch (Exception)
             {
@@ -122,7 +136,7 @@ namespace Trabajo_Practico
         public void ordenCompraRegistro()
         {
             string PATHLOG = @"C:\Users\ramir\Desktop\Trabajo Practico\Orden de compra"; //Establecer la ruta de la carpeta donde se quiere crear
-            string ARCHIVOLOG = "Orden de compra n°" + ".txt";
+            string ARCHIVOLOG = "Orden de compra" + ".txt";
 
             StreamWriter sw;
             string pathCompleto = PATHLOG + @"\" + ARCHIVOLOG;
@@ -142,7 +156,16 @@ namespace Trabajo_Practico
 
             sw.WriteLine("¡Orden de compra!");
             sw.WriteLine("Fecha de la compra: " + DateTime.Now.ToString());
-            sw.WriteLine("-");
+            sw.WriteLine("Componentes:");
+            sw.WriteLine("Microprocesador: " + labelMicroprocesador.Text);
+            sw.WriteLine("Motherboard: " + labelMotherboard.Text);
+            sw.WriteLine("Memoria: " + labelMemoria.Text);
+            sw.WriteLine("Placa de Video: " + labelPlacaDeVideo.Text);
+            sw.WriteLine("Almacenamiento: " + labelAlmacenamiento.Text);
+            sw.WriteLine("Fuente: " + labelFuente.Text);
+            sw.WriteLine("Gabinete: " + labelGabinete.Text);
+            sw.WriteLine("Total: " + labelTotalPrecio.Text);
+            sw.WriteLine("¡Esperamos que los disfrute!");
             sw.Close();
         }
 
@@ -261,7 +284,17 @@ namespace Trabajo_Practico
 
         private void buttonPay_Click(object sender, EventArgs e)
         {
-
+            DialogResult mensajeCompra = MessageBox.Show("Esta seguro que desea realizar la compra?","Atencion",MessageBoxButtons.YesNo,MessageBoxIcon.Information);
+            if (mensajeCompra == DialogResult.Yes)
+            {
+                ordenCompraRegistro();
+                enviarEmail();
+                Application.Exit();
+            }
+            else if (mensajeCompra == DialogResult.No)
+            {
+                
+            }
         }
 
         private void panelDesktopPane_MouseMove(object sender, MouseEventArgs e)
@@ -308,27 +341,401 @@ namespace Trabajo_Practico
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //Microprocesador
             if(seleccionMicroprocesadorDouble != 0)
             {
+                labelMicroprocesadorPrecio.Visible = true;
                 labelMicroprocesadorPrecio.Text = "$" + seleccionMicroprocesadorDouble.ToString();
+                labelMicroprocesadorPrecio.Enabled = true;
             }
 
             if(seleccionMicroprocesadorString != "")
             {
+                labelMicroprocesador.Visible = true;
                 labelMicroprocesador.Text = seleccionMicroprocesadorString;
+                labelMicroprocesador.Enabled = true;
             }
 
+            //Motherboard
             if (seleccionMotherboardDouble != 0)
             {
+                labelMotherboardPrecio.Visible = true;  
                 labelMotherboardPrecio.Text = "$" + seleccionMotherboardDouble.ToString();
+                labelMotherboardPrecio.Enabled = true;
             }
 
             if (seleccionMotherboardString != "")
             {
+                labelMotherboard.Visible = true;    
                 labelMotherboard.Text = seleccionMotherboardString;
+                labelMotherboard.Enabled = true;
             }
 
-            //anadirListBox();
+            //Memoria
+            if (seleccionMemoriaDouble != 0)
+            {
+                labelMemoriaPrecio.Visible = true;
+                labelMemoriaPrecio.Text = "$" + seleccionMemoriaDouble.ToString();
+                labelMemoriaPrecio.Enabled = true;
+            }
+
+            if (seleccionMemoriaString != "")
+            {
+                labelMemoria.Visible = true;
+                labelMemoria.Text = seleccionMemoriaString;
+                labelMemoria.Enabled = true;
+            }
+
+            //Placa de Video
+            if (seleccionPlacaDeVideoDouble != 0)
+            {
+                labelPlacaDeVideoPrecio.Visible = true;
+                labelPlacaDeVideoPrecio.Text = "$" + seleccionPlacaDeVideoDouble.ToString();
+                labelPlacaDeVideoPrecio.Enabled = true;
+            }
+
+            if (seleccionPlacaDeVideoString != "")
+            {
+                labelPlacaDeVideo.Visible = true;
+                labelPlacaDeVideo.Text = seleccionPlacaDeVideoString;
+                labelPlacaDeVideo.Enabled = true;
+            }
+
+            //Almacenamiento
+            if (seleccionAlmacenamientoDouble != 0)
+            {
+                labelAlmacenamientoPrecio.Visible = true;
+                labelAlmacenamientoPrecio.Text = "$" + seleccionAlmacenamientoDouble.ToString();
+                labelAlmacenamientoPrecio.Enabled = true;
+            }
+
+            if (seleccionAlmacenamientoString != "")
+            {
+                labelAlmacenamiento.Visible = true;
+                labelAlmacenamiento.Text = seleccionAlmacenamientoString;
+                labelAlmacenamiento.Enabled = true;
+            }
+
+            //Fuente
+            if (seleccionFuenteDouble != 0)
+            {
+                labelFuentePrecio.Visible = true;
+                labelFuentePrecio.Text = "$" + seleccionFuenteDouble.ToString();
+                labelFuentePrecio.Enabled = true;
+            }
+
+            if (seleccionFuenteString != "")
+            {
+                labelFuente.Visible = true;
+                labelFuente.Text = seleccionFuenteString;
+                labelFuente.Enabled = true;
+            }
+
+            //Gabinete
+            if (seleccionGabineteDouble != 0)
+            {
+                labelGabinetePrecio.Visible = true;
+                labelGabinetePrecio.Text = "$" + seleccionGabineteDouble.ToString();
+                labelGabinetePrecio.Enabled = true;
+            }
+
+            if (seleccionGabineteString != "")
+            {
+                labelGabinete.Visible = true;
+                labelGabinete.Text = seleccionGabineteString;
+                labelGabinete.Enabled = true;
+            }
+
+            double subTotal = seleccionMicroprocesadorDouble + seleccionMotherboardDouble + seleccionMemoriaDouble + seleccionPlacaDeVideoDouble + seleccionAlmacenamientoDouble + seleccionFuenteDouble + seleccionGabineteDouble;
+            double impuesto = subTotal * 0.21;
+            double total = subTotal + impuesto;
+
+            labelSubTotalPrecio.Text = "$" + subTotal.ToString();
+            labelImpuestoPrecio.Text = "$" + impuesto.ToString();
+            labelTotalPrecio.Text = "$" + total.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Microprocesador
+            labelMicroprocesadorPrecio.Visible = false;
+            seleccionMicroprocesadorDouble = 0;
+            labelMicroprocesador.Visible = false;
+            seleccionMicroprocesadorString = "";
+            labelMicroprocesadorPrecio.Enabled = false;
+
+            //Motherboard
+            labelMotherboardPrecio.Visible = false;
+            seleccionMotherboardDouble = 0;
+            labelMotherboard.Visible = false;
+            seleccionMotherboardString = "";
+            labelMotherboard.Enabled = false;
+
+            //Memoria
+            labelMemoriaPrecio.Visible = false;
+            seleccionMemoriaDouble = 0;
+            labelMemoria.Visible = false;
+            seleccionMemoriaString = "";
+            labelMemoria.Enabled = false;
+
+            //Placa de Video
+            labelPlacaDeVideoPrecio.Visible = false;
+            seleccionPlacaDeVideoDouble = 0;
+            labelPlacaDeVideo.Visible = false;
+            seleccionPlacaDeVideoString = "";
+            labelPlacaDeVideo.Enabled = false;
+
+            //Almacenamiento
+            labelAlmacenamientoPrecio.Visible = false;
+            seleccionAlmacenamientoDouble = 0;
+            labelAlmacenamiento.Visible = false;
+            seleccionAlmacenamientoString = "";
+            labelAlmacenamiento.Enabled = false;
+
+            //Fuente
+            labelFuentePrecio.Visible = false;
+            seleccionFuenteDouble = 0;
+            labelFuente.Visible = false;
+            seleccionFuenteString = "";
+            labelFuente.Enabled = false;
+
+            //Gabinete
+            labelGabinetePrecio.Visible = false;
+            seleccionGabineteDouble = 0;
+            labelGabinete.Visible = false;
+            seleccionGabineteString = "";
+            labelGabinete.Enabled = false;
+        }
+
+        private void labelMicroprocesador_Click(object sender, EventArgs e)
+        {
+            labelMicroprocesadorPrecio.Visible = false;
+            seleccionMicroprocesadorDouble = 0;
+            labelMicroprocesador.Visible = false;
+            seleccionMicroprocesadorString = "";
+            labelMicroprocesadorPrecio.Enabled = false;
+        }
+
+        private void labelMotherboard_Click(object sender, EventArgs e)
+        {
+            labelMotherboardPrecio.Visible = false;
+            seleccionMotherboardDouble = 0;
+            labelMotherboard.Visible = false;
+            seleccionMotherboardString = "";
+            labelMotherboard.Enabled = false;
+        }
+
+        private void labelMemoria_Click(object sender, EventArgs e)
+        {
+            labelMemoriaPrecio.Visible = false;
+            seleccionMemoriaDouble = 0;
+            labelMemoria.Visible = false;
+            seleccionMemoriaString = "";
+            labelMemoria.Enabled = false;
+        }
+
+        private void labelPlacaDeVideo_Click(object sender, EventArgs e)
+        {
+            labelPlacaDeVideoPrecio.Visible = false;
+            seleccionPlacaDeVideoDouble = 0;
+            labelPlacaDeVideo.Visible = false;
+            seleccionPlacaDeVideoString = "";
+            labelPlacaDeVideo.Enabled = false;
+        }
+
+        private void labelAlmacenamiento_Click(object sender, EventArgs e)
+        {
+            labelAlmacenamientoPrecio.Visible = false;
+            seleccionAlmacenamientoDouble = 0;
+            labelAlmacenamiento.Visible = false;
+            seleccionAlmacenamientoString = "";
+            labelAlmacenamiento.Enabled = false;
+        }
+
+        private void labelFuente_Click(object sender, EventArgs e)
+        {
+            labelFuentePrecio.Visible = false;
+            seleccionFuenteDouble = 0;
+            labelFuente.Visible = false;
+            seleccionFuenteString = "";
+            labelFuente.Enabled = false;
+        }
+
+        private void labelGabinete_Click(object sender, EventArgs e)
+        {
+            labelGabinetePrecio.Visible = false;
+            seleccionGabineteDouble = 0;
+            labelGabinete.Visible = false;
+            seleccionGabineteString = "";
+            labelGabinete.Enabled = false;
+        }
+
+        private void labelMicroprocesador_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelMicroprocesador.ForeColor = Color.FromArgb(0, 117, 214);
+            labelMicroprocesadorPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelMicroprocesador_MouseLeave(object sender, EventArgs e)
+        {
+            labelMicroprocesador.ForeColor = SystemColors.ControlText;
+            labelMicroprocesadorPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelMotherboard_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelMotherboard.ForeColor = Color.FromArgb(0, 117, 214);
+            labelMotherboardPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelMotherboard_MouseLeave(object sender, EventArgs e)
+        {
+            labelMotherboard.ForeColor = SystemColors.ControlText;
+            labelMotherboardPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelMemoria_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelMemoria.ForeColor = Color.FromArgb(0, 117, 214);
+            labelMemoriaPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelMemoria_MouseLeave(object sender, EventArgs e)
+        {
+            labelMemoria.ForeColor = SystemColors.ControlText;
+            labelMemoriaPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelPlacaDeVideo_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelPlacaDeVideo.ForeColor = Color.FromArgb(0, 117, 214);
+            labelPlacaDeVideoPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelPlacaDeVideo_MouseLeave(object sender, EventArgs e)
+        {
+            labelPlacaDeVideo.ForeColor = SystemColors.ControlText;
+            labelPlacaDeVideoPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelAlmacenamiento_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelAlmacenamiento.ForeColor = Color.FromArgb(0, 117, 214);
+            labelAlmacenamientoPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelAlmacenamiento_MouseLeave(object sender, EventArgs e)
+        {
+            labelAlmacenamiento.ForeColor = SystemColors.ControlText;
+            labelAlmacenamientoPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelFuente_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelFuente.ForeColor = Color.FromArgb(0, 117, 214);
+            labelFuentePrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelFuente_MouseLeave(object sender, EventArgs e)
+        {
+            labelFuente.ForeColor = SystemColors.ControlText;
+            labelFuentePrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelGabinete_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelGabinete.ForeColor = Color.FromArgb(0, 117, 214);
+            labelGabinetePrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelGabinete_MouseLeave(object sender, EventArgs e)
+        {
+            labelGabinete.ForeColor = SystemColors.ControlText;
+            labelGabinetePrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelMicroprocesadorPrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelMicroprocesador.ForeColor = Color.FromArgb(0, 117, 214);
+            labelMicroprocesadorPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelMicroprocesadorPrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelMicroprocesador.ForeColor = SystemColors.ControlText;
+            labelMicroprocesadorPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelMotherboardPrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelMotherboard.ForeColor = Color.FromArgb(0, 117, 214);
+            labelMotherboardPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelMotherboardPrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelMotherboard.ForeColor = SystemColors.ControlText;
+            labelMotherboardPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelMemoriaPrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelMemoria.ForeColor = Color.FromArgb(0, 117, 214);
+            labelMemoriaPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelMemoriaPrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelMemoria.ForeColor = SystemColors.ControlText;
+            labelMemoriaPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelPlacaDeVideoPrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelPlacaDeVideo.ForeColor = Color.FromArgb(0, 117, 214);
+            labelPlacaDeVideoPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelPlacaDeVideoPrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelPlacaDeVideo.ForeColor = SystemColors.ControlText;
+            labelPlacaDeVideoPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelAlmacenamientoPrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelAlmacenamiento.ForeColor = Color.FromArgb(0, 117, 214);
+            labelAlmacenamientoPrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelAlmacenamientoPrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelAlmacenamiento.ForeColor = SystemColors.ControlText;
+            labelAlmacenamientoPrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelFuentePrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelFuente.ForeColor = Color.FromArgb(0, 117, 214);
+            labelFuentePrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelFuentePrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelFuente.ForeColor = SystemColors.ControlText;
+            labelFuentePrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void labelGabinetePrecio_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelGabinete.ForeColor = Color.FromArgb(0, 117, 214);
+            labelGabinetePrecio.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void labelGabinetePrecio_MouseLeave(object sender, EventArgs e)
+        {
+            labelGabinete.ForeColor = SystemColors.ControlText;
+            labelGabinetePrecio.ForeColor = SystemColors.ControlText;
         }
     }
 }

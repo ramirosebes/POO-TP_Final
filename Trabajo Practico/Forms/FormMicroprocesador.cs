@@ -23,7 +23,7 @@ namespace Trabajo_Practico.Forms
         //Agregar evento right click y despliegue un menu con detalles, copiar los que aparecen en Hardcore al principio
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Test");
+            //MessageBox.Show("Test");
         }
 
         private void label12_MouseUp(object sender, MouseEventArgs e)

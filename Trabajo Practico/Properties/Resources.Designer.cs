@@ -63,9 +63,59 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _01_1_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("01-1-300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _03_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("03-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_1_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("1-1-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("1-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1000_51_500x500 {
             get {
                 object obj = ResourceManager.GetObject("1000-51-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _109466_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("109466-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,6 +133,16 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1530198259_st8000vn0022_01_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("1530198259_st8000vn0022_01-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _191_intel_core_i7_12700k_50_ghz_500x500 {
             get {
                 object obj = ResourceManager.GetObject("191-intel-core-i7-12700k-50-ghz-500x500", resourceCulture);
@@ -93,9 +153,60 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2x16tuf_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("2x16tuf-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4288_gigabyte_gp_ap1200pm_1200w_80_plus_platinum_full_modular_especificaciones_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("4288-gigabyte-gp-ap1200pm-1200w-80-plus-platinum-full-modular-especificaciones-30" +
+                        "0x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _450_1000 {
             get {
                 object obj = ResourceManager.GetObject("450_1000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6600DUAL2_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("6600DUAL2-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6700XTEAGLE2_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("6700XTEAGLE2-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _869_gallery_01_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("869_gallery_01-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +244,86 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BL16G32C16U4BL {
+            get {
+                object obj = ResourceManager.GetObject("BL16G32C16U4BL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CC_9011226_WW_Gallery_7000X_RGB_BLACK_01_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("CC-9011226-WW-Gallery-7000X-RGB-BLACK-01-300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CMH16GX4M2E3200C16b_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("CMH16GX4M2E3200C16b-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CMK16GX4M2B3000C15_Gallery_VENG_LPX_BLK_02_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("CMK16GX4M2B3000C15-Gallery-VENG-LPX-BLK-02-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CORSAIRPLATINUM1_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("CORSAIRPLATINUM1-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CP_9020139_NA_Gallery_gallery_HX1000_02_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("CP-9020139-NA-Gallery-gallery-HX1000-02-300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CP_9020188_NA_Gallery_RMx_White_850_01_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("CP-9020188-NA-Gallery-RMx-White-850-01-300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CT1000P5PSSD8_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("CT1000P5PSSD8-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap E6CGy3GXoAcMJfZ {
             get {
                 object obj = ResourceManager.GetObject("E6CGy3GXoAcMJfZ", resourceCulture);
@@ -153,6 +344,16 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Eclipse_P200A_DRGB_01_300x300 {
+            get {
+                object obj = ResourceManager.GetObject("Eclipse_P200A_DRGB_01-300x300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap G6900_500x500 {
             get {
                 object obj = ResourceManager.GetObject("G6900-500x500", resourceCulture);
@@ -166,6 +367,16 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap g7400_500x500 {
             get {
                 object obj = ResourceManager.GetObject("g7400-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GB_N2060D6_6GD2_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("GB-N2060D6-6GD2-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +407,16 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap lock_2 {
             get {
                 object obj = ResourceManager.GetObject("lock-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MP600500_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("MP600500-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +457,26 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap Untitled_1 {
             get {
                 object obj = ResourceManager.GetObject("Untitled-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vision_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("vision-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wd_wd161kryz_16tb_3_5_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("wd-wd161kryz-16tb-3.5-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

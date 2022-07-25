@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelBottomBorder = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.labelMicroprocesadorPrecio = new System.Windows.Forms.Label();
             this.buttonVolverAtras = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.buttonGabinete = new System.Windows.Forms.Button();
@@ -49,22 +48,43 @@
             this.buttonMotherboard = new System.Windows.Forms.Button();
             this.buttonMicroprocesador = new System.Windows.Forms.Button();
             this.buttonVacio = new System.Windows.Forms.Button();
+            this.labelMicroprocesadorPrecio = new System.Windows.Forms.Label();
             this.panelCarrito = new System.Windows.Forms.Panel();
+            this.labelGabinetePrecio = new System.Windows.Forms.Label();
+            this.labelGabinete = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.labelFuentePrecio = new System.Windows.Forms.Label();
+            this.labelFuente = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.labelAlmacenamientoPrecio = new System.Windows.Forms.Label();
+            this.labelAlmacenamiento = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.labelPlacaDeVideoPrecio = new System.Windows.Forms.Label();
+            this.labelPlacaDeVideo = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.labelMemoriaPrecio = new System.Windows.Forms.Label();
+            this.labelMemoria = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.labelMotherboardPrecio = new System.Windows.Forms.Label();
+            this.labelMotherboard = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.labelMicroprocesador = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelSubTotalPrecio = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelImpuestoPrecio = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelTotalPrecio = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonClearAll = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonPay = new System.Windows.Forms.Button();
             this.panelBottomCarrito = new System.Windows.Forms.Panel();
@@ -77,26 +97,6 @@
             this.panelLeftMenu = new System.Windows.Forms.Panel();
             this.panelTopInicio = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.labelMicroprocesador = new System.Windows.Forms.Label();
-            this.labelMotherboardPrecio = new System.Windows.Forms.Label();
-            this.labelMotherboard = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.labelMemoriaPrecio = new System.Windows.Forms.Label();
-            this.labelMemoria = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.labelPlacaDeVideoPrecio = new System.Windows.Forms.Label();
-            this.labelPlacaDeVideo = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.labelAlmacenamientoPrecio = new System.Windows.Forms.Label();
-            this.labelAlmacenamiento = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.labelFuentePrecio = new System.Windows.Forms.Label();
-            this.labelFuente = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.labelGabinetePrecio = new System.Windows.Forms.Label();
-            this.labelGabinete = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelCarrito.SuspendLayout();
@@ -216,18 +216,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(141, 675);
             this.panelMenu.TabIndex = 20;
-            // 
-            // labelMicroprocesadorPrecio
-            // 
-            this.labelMicroprocesadorPrecio.AutoSize = true;
-            this.labelMicroprocesadorPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMicroprocesadorPrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelMicroprocesadorPrecio.Location = new System.Drawing.Point(217, 121);
-            this.labelMicroprocesadorPrecio.Name = "labelMicroprocesadorPrecio";
-            this.labelMicroprocesadorPrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelMicroprocesadorPrecio.TabIndex = 0;
-            this.labelMicroprocesadorPrecio.Text = "label11";
-            this.labelMicroprocesadorPrecio.Click += new System.EventHandler(this.label11_Click);
             // 
             // buttonVolverAtras
             // 
@@ -387,6 +375,21 @@
             this.buttonVacio.TabIndex = 0;
             this.buttonVacio.UseVisualStyleBackColor = true;
             // 
+            // labelMicroprocesadorPrecio
+            // 
+            this.labelMicroprocesadorPrecio.AutoSize = true;
+            this.labelMicroprocesadorPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMicroprocesadorPrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelMicroprocesadorPrecio.Location = new System.Drawing.Point(217, 121);
+            this.labelMicroprocesadorPrecio.Name = "labelMicroprocesadorPrecio";
+            this.labelMicroprocesadorPrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelMicroprocesadorPrecio.TabIndex = 0;
+            this.labelMicroprocesadorPrecio.Text = "label11";
+            this.labelMicroprocesadorPrecio.Visible = false;
+            this.labelMicroprocesadorPrecio.Click += new System.EventHandler(this.label11_Click);
+            this.labelMicroprocesadorPrecio.MouseLeave += new System.EventHandler(this.labelMicroprocesadorPrecio_MouseLeave);
+            this.labelMicroprocesadorPrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelMicroprocesadorPrecio_MouseMove);
+            // 
             // panelCarrito
             // 
             this.panelCarrito.Controls.Add(this.labelGabinetePrecio);
@@ -427,6 +430,258 @@
             this.panelCarrito.Size = new System.Drawing.Size(277, 675);
             this.panelCarrito.TabIndex = 21;
             // 
+            // labelGabinetePrecio
+            // 
+            this.labelGabinetePrecio.AutoSize = true;
+            this.labelGabinetePrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGabinetePrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelGabinetePrecio.Location = new System.Drawing.Point(217, 325);
+            this.labelGabinetePrecio.Name = "labelGabinetePrecio";
+            this.labelGabinetePrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelGabinetePrecio.TabIndex = 48;
+            this.labelGabinetePrecio.Text = "label11";
+            this.labelGabinetePrecio.Visible = false;
+            this.labelGabinetePrecio.MouseLeave += new System.EventHandler(this.labelGabinetePrecio_MouseLeave);
+            this.labelGabinetePrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelGabinetePrecio_MouseMove);
+            // 
+            // labelGabinete
+            // 
+            this.labelGabinete.AutoSize = true;
+            this.labelGabinete.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGabinete.Location = new System.Drawing.Point(16, 325);
+            this.labelGabinete.Name = "labelGabinete";
+            this.labelGabinete.Size = new System.Drawing.Size(0, 19);
+            this.labelGabinete.TabIndex = 50;
+            this.labelGabinete.Visible = false;
+            this.labelGabinete.Click += new System.EventHandler(this.labelGabinete_Click);
+            this.labelGabinete.MouseLeave += new System.EventHandler(this.labelGabinete_MouseLeave);
+            this.labelGabinete.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelGabinete_MouseMove);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label28.Location = new System.Drawing.Point(16, 310);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(46, 16);
+            this.label28.TabIndex = 49;
+            this.label28.Text = "Gabinete:";
+            // 
+            // labelFuentePrecio
+            // 
+            this.labelFuentePrecio.AutoSize = true;
+            this.labelFuentePrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFuentePrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelFuentePrecio.Location = new System.Drawing.Point(217, 291);
+            this.labelFuentePrecio.Name = "labelFuentePrecio";
+            this.labelFuentePrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelFuentePrecio.TabIndex = 45;
+            this.labelFuentePrecio.Text = "label11";
+            this.labelFuentePrecio.Visible = false;
+            this.labelFuentePrecio.MouseLeave += new System.EventHandler(this.labelFuentePrecio_MouseLeave);
+            this.labelFuentePrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelFuentePrecio_MouseMove);
+            // 
+            // labelFuente
+            // 
+            this.labelFuente.AutoSize = true;
+            this.labelFuente.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFuente.Location = new System.Drawing.Point(16, 291);
+            this.labelFuente.Name = "labelFuente";
+            this.labelFuente.Size = new System.Drawing.Size(0, 19);
+            this.labelFuente.TabIndex = 47;
+            this.labelFuente.Visible = false;
+            this.labelFuente.Click += new System.EventHandler(this.labelFuente_Click);
+            this.labelFuente.MouseLeave += new System.EventHandler(this.labelFuente_MouseLeave);
+            this.labelFuente.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelFuente_MouseMove);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label25.Location = new System.Drawing.Point(16, 276);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(37, 16);
+            this.label25.TabIndex = 46;
+            this.label25.Text = "Fuente:";
+            // 
+            // labelAlmacenamientoPrecio
+            // 
+            this.labelAlmacenamientoPrecio.AutoSize = true;
+            this.labelAlmacenamientoPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAlmacenamientoPrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelAlmacenamientoPrecio.Location = new System.Drawing.Point(217, 257);
+            this.labelAlmacenamientoPrecio.Name = "labelAlmacenamientoPrecio";
+            this.labelAlmacenamientoPrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelAlmacenamientoPrecio.TabIndex = 42;
+            this.labelAlmacenamientoPrecio.Text = "label11";
+            this.labelAlmacenamientoPrecio.Visible = false;
+            this.labelAlmacenamientoPrecio.MouseLeave += new System.EventHandler(this.labelAlmacenamientoPrecio_MouseLeave);
+            this.labelAlmacenamientoPrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelAlmacenamientoPrecio_MouseMove);
+            // 
+            // labelAlmacenamiento
+            // 
+            this.labelAlmacenamiento.AutoSize = true;
+            this.labelAlmacenamiento.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAlmacenamiento.Location = new System.Drawing.Point(16, 257);
+            this.labelAlmacenamiento.Name = "labelAlmacenamiento";
+            this.labelAlmacenamiento.Size = new System.Drawing.Size(0, 19);
+            this.labelAlmacenamiento.TabIndex = 44;
+            this.labelAlmacenamiento.Visible = false;
+            this.labelAlmacenamiento.Click += new System.EventHandler(this.labelAlmacenamiento_Click);
+            this.labelAlmacenamiento.MouseLeave += new System.EventHandler(this.labelAlmacenamiento_MouseLeave);
+            this.labelAlmacenamiento.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelAlmacenamiento_MouseMove);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label22.Location = new System.Drawing.Point(16, 242);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(80, 16);
+            this.label22.TabIndex = 43;
+            this.label22.Text = "Almacenamiento:";
+            // 
+            // labelPlacaDeVideoPrecio
+            // 
+            this.labelPlacaDeVideoPrecio.AutoSize = true;
+            this.labelPlacaDeVideoPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlacaDeVideoPrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelPlacaDeVideoPrecio.Location = new System.Drawing.Point(217, 223);
+            this.labelPlacaDeVideoPrecio.Name = "labelPlacaDeVideoPrecio";
+            this.labelPlacaDeVideoPrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelPlacaDeVideoPrecio.TabIndex = 39;
+            this.labelPlacaDeVideoPrecio.Text = "label11";
+            this.labelPlacaDeVideoPrecio.Visible = false;
+            this.labelPlacaDeVideoPrecio.MouseLeave += new System.EventHandler(this.labelPlacaDeVideoPrecio_MouseLeave);
+            this.labelPlacaDeVideoPrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelPlacaDeVideoPrecio_MouseMove);
+            // 
+            // labelPlacaDeVideo
+            // 
+            this.labelPlacaDeVideo.AutoSize = true;
+            this.labelPlacaDeVideo.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlacaDeVideo.Location = new System.Drawing.Point(16, 223);
+            this.labelPlacaDeVideo.Name = "labelPlacaDeVideo";
+            this.labelPlacaDeVideo.Size = new System.Drawing.Size(0, 19);
+            this.labelPlacaDeVideo.TabIndex = 41;
+            this.labelPlacaDeVideo.Visible = false;
+            this.labelPlacaDeVideo.Click += new System.EventHandler(this.labelPlacaDeVideo_Click);
+            this.labelPlacaDeVideo.MouseLeave += new System.EventHandler(this.labelPlacaDeVideo_MouseLeave);
+            this.labelPlacaDeVideo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelPlacaDeVideo_MouseMove);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label19.Location = new System.Drawing.Point(16, 208);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(72, 16);
+            this.label19.TabIndex = 40;
+            this.label19.Text = "Placa de Video:";
+            // 
+            // labelMemoriaPrecio
+            // 
+            this.labelMemoriaPrecio.AutoSize = true;
+            this.labelMemoriaPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMemoriaPrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelMemoriaPrecio.Location = new System.Drawing.Point(217, 189);
+            this.labelMemoriaPrecio.Name = "labelMemoriaPrecio";
+            this.labelMemoriaPrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelMemoriaPrecio.TabIndex = 36;
+            this.labelMemoriaPrecio.Text = "label11";
+            this.labelMemoriaPrecio.Visible = false;
+            this.labelMemoriaPrecio.MouseLeave += new System.EventHandler(this.labelMemoriaPrecio_MouseLeave);
+            this.labelMemoriaPrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelMemoriaPrecio_MouseMove);
+            // 
+            // labelMemoria
+            // 
+            this.labelMemoria.AutoSize = true;
+            this.labelMemoria.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMemoria.Location = new System.Drawing.Point(16, 189);
+            this.labelMemoria.Name = "labelMemoria";
+            this.labelMemoria.Size = new System.Drawing.Size(0, 19);
+            this.labelMemoria.TabIndex = 38;
+            this.labelMemoria.Visible = false;
+            this.labelMemoria.Click += new System.EventHandler(this.labelMemoria_Click);
+            this.labelMemoria.MouseLeave += new System.EventHandler(this.labelMemoria_MouseLeave);
+            this.labelMemoria.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelMemoria_MouseMove);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label16.Location = new System.Drawing.Point(16, 174);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 16);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Memoria:";
+            // 
+            // labelMotherboardPrecio
+            // 
+            this.labelMotherboardPrecio.AutoSize = true;
+            this.labelMotherboardPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMotherboardPrecio.ForeColor = System.Drawing.Color.Black;
+            this.labelMotherboardPrecio.Location = new System.Drawing.Point(218, 155);
+            this.labelMotherboardPrecio.Name = "labelMotherboardPrecio";
+            this.labelMotherboardPrecio.Size = new System.Drawing.Size(44, 19);
+            this.labelMotherboardPrecio.TabIndex = 33;
+            this.labelMotherboardPrecio.Text = "label11";
+            this.labelMotherboardPrecio.Visible = false;
+            this.labelMotherboardPrecio.MouseLeave += new System.EventHandler(this.labelMotherboardPrecio_MouseLeave);
+            this.labelMotherboardPrecio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelMotherboardPrecio_MouseMove);
+            // 
+            // labelMotherboard
+            // 
+            this.labelMotherboard.AutoSize = true;
+            this.labelMotherboard.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMotherboard.Location = new System.Drawing.Point(17, 155);
+            this.labelMotherboard.Name = "labelMotherboard";
+            this.labelMotherboard.Size = new System.Drawing.Size(0, 19);
+            this.labelMotherboard.TabIndex = 35;
+            this.labelMotherboard.Visible = false;
+            this.labelMotherboard.Click += new System.EventHandler(this.labelMotherboard_Click);
+            this.labelMotherboard.MouseLeave += new System.EventHandler(this.labelMotherboard_MouseLeave);
+            this.labelMotherboard.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelMotherboard_MouseMove);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label13.Location = new System.Drawing.Point(17, 140);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 16);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "Motherboard:";
+            // 
+            // labelMicroprocesador
+            // 
+            this.labelMicroprocesador.AutoSize = true;
+            this.labelMicroprocesador.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMicroprocesador.Location = new System.Drawing.Point(16, 121);
+            this.labelMicroprocesador.Name = "labelMicroprocesador";
+            this.labelMicroprocesador.Size = new System.Drawing.Size(0, 19);
+            this.labelMicroprocesador.TabIndex = 32;
+            this.labelMicroprocesador.Visible = false;
+            this.labelMicroprocesador.Click += new System.EventHandler(this.labelMicroprocesador_Click);
+            this.labelMicroprocesador.MouseLeave += new System.EventHandler(this.labelMicroprocesador_MouseLeave);
+            this.labelMicroprocesador.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelMicroprocesador_MouseMove);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label10.Location = new System.Drawing.Point(16, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 16);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Microprocesador:";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGray;
@@ -460,7 +715,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.labelSubTotalPrecio);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(10, 519);
@@ -468,17 +723,17 @@
             this.panel5.Size = new System.Drawing.Size(257, 30);
             this.panel5.TabIndex = 30;
             // 
-            // label6
+            // labelSubTotalPrecio
             // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(224, 0);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(2, 4, 8, 0);
-            this.label6.Size = new System.Drawing.Size(33, 23);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "$0";
+            this.labelSubTotalPrecio.AutoSize = true;
+            this.labelSubTotalPrecio.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelSubTotalPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSubTotalPrecio.Location = new System.Drawing.Point(224, 0);
+            this.labelSubTotalPrecio.Name = "labelSubTotalPrecio";
+            this.labelSubTotalPrecio.Padding = new System.Windows.Forms.Padding(2, 4, 8, 0);
+            this.labelSubTotalPrecio.Size = new System.Drawing.Size(33, 23);
+            this.labelSubTotalPrecio.TabIndex = 1;
+            this.labelSubTotalPrecio.Text = "$0";
             // 
             // label7
             // 
@@ -492,7 +747,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.labelImpuestoPrecio);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(10, 549);
@@ -500,17 +755,17 @@
             this.panel4.Size = new System.Drawing.Size(257, 30);
             this.panel4.TabIndex = 29;
             // 
-            // label5
+            // labelImpuestoPrecio
             // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(224, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(2, 4, 8, 0);
-            this.label5.Size = new System.Drawing.Size(33, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "$0";
+            this.labelImpuestoPrecio.AutoSize = true;
+            this.labelImpuestoPrecio.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelImpuestoPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImpuestoPrecio.Location = new System.Drawing.Point(224, 0);
+            this.labelImpuestoPrecio.Name = "labelImpuestoPrecio";
+            this.labelImpuestoPrecio.Padding = new System.Windows.Forms.Padding(2, 4, 8, 0);
+            this.labelImpuestoPrecio.Size = new System.Drawing.Size(33, 23);
+            this.labelImpuestoPrecio.TabIndex = 1;
+            this.labelImpuestoPrecio.Text = "$0";
             // 
             // label4
             // 
@@ -524,7 +779,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.labelTotalPrecio);
             this.panel3.Controls.Add(this.labelTotal);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(10, 579);
@@ -532,17 +787,17 @@
             this.panel3.Size = new System.Drawing.Size(257, 39);
             this.panel3.TabIndex = 28;
             // 
-            // label3
+            // labelTotalPrecio
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(223, 0);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(0, 8, 8, 0);
-            this.label3.Size = new System.Drawing.Size(34, 31);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "$0";
+            this.labelTotalPrecio.AutoSize = true;
+            this.labelTotalPrecio.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelTotalPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalPrecio.Location = new System.Drawing.Point(223, 0);
+            this.labelTotalPrecio.Name = "labelTotalPrecio";
+            this.labelTotalPrecio.Padding = new System.Windows.Forms.Padding(0, 8, 8, 0);
+            this.labelTotalPrecio.Size = new System.Drawing.Size(34, 31);
+            this.labelTotalPrecio.TabIndex = 28;
+            this.labelTotalPrecio.Text = "$0";
             // 
             // labelTotal
             // 
@@ -564,7 +819,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.buttonClearAll);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(10, 10);
@@ -572,19 +827,20 @@
             this.panel1.Size = new System.Drawing.Size(257, 56);
             this.panel1.TabIndex = 22;
             // 
-            // button2
+            // buttonClearAll
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(164)))), ((int)(((byte)(172)))));
-            this.button2.Location = new System.Drawing.Point(189, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(62, 23);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Clear All";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonClearAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.buttonClearAll.FlatAppearance.BorderSize = 0;
+            this.buttonClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearAll.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(164)))), ((int)(((byte)(172)))));
+            this.buttonClearAll.Location = new System.Drawing.Point(189, 19);
+            this.buttonClearAll.Name = "buttonClearAll";
+            this.buttonClearAll.Size = new System.Drawing.Size(62, 23);
+            this.buttonClearAll.TabIndex = 23;
+            this.buttonClearAll.Text = "Clear All";
+            this.buttonClearAll.UseVisualStyleBackColor = false;
+            this.buttonClearAll.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -702,219 +958,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label10.Location = new System.Drawing.Point(16, 106);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 16);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Microprocesador:";
-            // 
-            // labelMicroprocesador
-            // 
-            this.labelMicroprocesador.AutoSize = true;
-            this.labelMicroprocesador.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMicroprocesador.Location = new System.Drawing.Point(16, 121);
-            this.labelMicroprocesador.Name = "labelMicroprocesador";
-            this.labelMicroprocesador.Size = new System.Drawing.Size(46, 19);
-            this.labelMicroprocesador.TabIndex = 32;
-            this.labelMicroprocesador.Text = "label12";
-            // 
-            // labelMotherboardPrecio
-            // 
-            this.labelMotherboardPrecio.AutoSize = true;
-            this.labelMotherboardPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotherboardPrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelMotherboardPrecio.Location = new System.Drawing.Point(218, 155);
-            this.labelMotherboardPrecio.Name = "labelMotherboardPrecio";
-            this.labelMotherboardPrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelMotherboardPrecio.TabIndex = 33;
-            this.labelMotherboardPrecio.Text = "label11";
-            // 
-            // labelMotherboard
-            // 
-            this.labelMotherboard.AutoSize = true;
-            this.labelMotherboard.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotherboard.Location = new System.Drawing.Point(17, 155);
-            this.labelMotherboard.Name = "labelMotherboard";
-            this.labelMotherboard.Size = new System.Drawing.Size(46, 19);
-            this.labelMotherboard.TabIndex = 35;
-            this.labelMotherboard.Text = "label12";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label13.Location = new System.Drawing.Point(17, 140);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 16);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Motherboard:";
-            // 
-            // labelMemoriaPrecio
-            // 
-            this.labelMemoriaPrecio.AutoSize = true;
-            this.labelMemoriaPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMemoriaPrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelMemoriaPrecio.Location = new System.Drawing.Point(217, 189);
-            this.labelMemoriaPrecio.Name = "labelMemoriaPrecio";
-            this.labelMemoriaPrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelMemoriaPrecio.TabIndex = 36;
-            this.labelMemoriaPrecio.Text = "label11";
-            // 
-            // labelMemoria
-            // 
-            this.labelMemoria.AutoSize = true;
-            this.labelMemoria.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMemoria.Location = new System.Drawing.Point(16, 189);
-            this.labelMemoria.Name = "labelMemoria";
-            this.labelMemoria.Size = new System.Drawing.Size(46, 19);
-            this.labelMemoria.TabIndex = 38;
-            this.labelMemoria.Text = "label12";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label16.Location = new System.Drawing.Point(16, 174);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 16);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "Memoria:";
-            // 
-            // labelPlacaDeVideoPrecio
-            // 
-            this.labelPlacaDeVideoPrecio.AutoSize = true;
-            this.labelPlacaDeVideoPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlacaDeVideoPrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelPlacaDeVideoPrecio.Location = new System.Drawing.Point(217, 223);
-            this.labelPlacaDeVideoPrecio.Name = "labelPlacaDeVideoPrecio";
-            this.labelPlacaDeVideoPrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelPlacaDeVideoPrecio.TabIndex = 39;
-            this.labelPlacaDeVideoPrecio.Text = "label11";
-            // 
-            // labelPlacaDeVideo
-            // 
-            this.labelPlacaDeVideo.AutoSize = true;
-            this.labelPlacaDeVideo.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlacaDeVideo.Location = new System.Drawing.Point(16, 223);
-            this.labelPlacaDeVideo.Name = "labelPlacaDeVideo";
-            this.labelPlacaDeVideo.Size = new System.Drawing.Size(46, 19);
-            this.labelPlacaDeVideo.TabIndex = 41;
-            this.labelPlacaDeVideo.Text = "label12";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label19.Location = new System.Drawing.Point(16, 208);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(72, 16);
-            this.label19.TabIndex = 40;
-            this.label19.Text = "Placa de Video:";
-            // 
-            // labelAlmacenamientoPrecio
-            // 
-            this.labelAlmacenamientoPrecio.AutoSize = true;
-            this.labelAlmacenamientoPrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAlmacenamientoPrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelAlmacenamientoPrecio.Location = new System.Drawing.Point(217, 257);
-            this.labelAlmacenamientoPrecio.Name = "labelAlmacenamientoPrecio";
-            this.labelAlmacenamientoPrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelAlmacenamientoPrecio.TabIndex = 42;
-            this.labelAlmacenamientoPrecio.Text = "label11";
-            // 
-            // labelAlmacenamiento
-            // 
-            this.labelAlmacenamiento.AutoSize = true;
-            this.labelAlmacenamiento.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAlmacenamiento.Location = new System.Drawing.Point(16, 257);
-            this.labelAlmacenamiento.Name = "labelAlmacenamiento";
-            this.labelAlmacenamiento.Size = new System.Drawing.Size(46, 19);
-            this.labelAlmacenamiento.TabIndex = 44;
-            this.labelAlmacenamiento.Text = "label12";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label22.Location = new System.Drawing.Point(16, 242);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(80, 16);
-            this.label22.TabIndex = 43;
-            this.label22.Text = "Almacenamiento:";
-            // 
-            // labelFuentePrecio
-            // 
-            this.labelFuentePrecio.AutoSize = true;
-            this.labelFuentePrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFuentePrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelFuentePrecio.Location = new System.Drawing.Point(217, 291);
-            this.labelFuentePrecio.Name = "labelFuentePrecio";
-            this.labelFuentePrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelFuentePrecio.TabIndex = 45;
-            this.labelFuentePrecio.Text = "label11";
-            // 
-            // labelFuente
-            // 
-            this.labelFuente.AutoSize = true;
-            this.labelFuente.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFuente.Location = new System.Drawing.Point(16, 291);
-            this.labelFuente.Name = "labelFuente";
-            this.labelFuente.Size = new System.Drawing.Size(46, 19);
-            this.labelFuente.TabIndex = 47;
-            this.labelFuente.Text = "label12";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label25.Location = new System.Drawing.Point(16, 276);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(37, 16);
-            this.label25.TabIndex = 46;
-            this.label25.Text = "Fuente:";
-            // 
-            // labelGabinetePrecio
-            // 
-            this.labelGabinetePrecio.AutoSize = true;
-            this.labelGabinetePrecio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGabinetePrecio.ForeColor = System.Drawing.Color.Black;
-            this.labelGabinetePrecio.Location = new System.Drawing.Point(217, 325);
-            this.labelGabinetePrecio.Name = "labelGabinetePrecio";
-            this.labelGabinetePrecio.Size = new System.Drawing.Size(44, 19);
-            this.labelGabinetePrecio.TabIndex = 48;
-            this.labelGabinetePrecio.Text = "label11";
-            // 
-            // labelGabinete
-            // 
-            this.labelGabinete.AutoSize = true;
-            this.labelGabinete.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGabinete.Location = new System.Drawing.Point(16, 325);
-            this.labelGabinete.Name = "labelGabinete";
-            this.labelGabinete.Size = new System.Drawing.Size(46, 19);
-            this.labelGabinete.TabIndex = 50;
-            this.labelGabinete.Text = "label12";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label28.Location = new System.Drawing.Point(16, 310);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(46, 16);
-            this.label28.TabIndex = 49;
-            this.label28.Text = "Gabinete:";
-            // 
             // Store
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -974,7 +1017,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonVolverAtras;
         private System.Windows.Forms.Button buttonSalir;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonClearAll;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelBottomMenu;
         private System.Windows.Forms.Panel panelRightMenu;
@@ -983,12 +1026,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelImpuestoPrecio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelTotalPrecio;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelSubTotalPrecio;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label9;
