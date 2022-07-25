@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net.Mail;
+using System.Runtime.InteropServices;
 
 namespace Trabajo_Practico
 {
@@ -20,21 +21,33 @@ namespace Trabajo_Practico
         //Variables global
         public string email_global;
         string sender_auxiliar;
+        static public double seleccionMicroprocesadorDouble = 0;
+        static public string seleccionMicroprocesadorString = "";
+        static public double seleccionMotherboardDouble = 0;
+        static public string seleccionMotherboardString = "";
 
         //Move
         int mov;
         int movX;
         int movY;
 
-        public Store(string email_global)
+        public Store(/*string email_global*/)
         {
             InitializeComponent();
             OpenChildForm(new Forms.FormInicio(), sender_auxiliar);
+            //Variable Global
+            
         }
 
         private void Store_Load(object sender, EventArgs e)
         {
             this.Location = Screen.AllScreens[1].WorkingArea.Location;
+
+            //Timer
+            timer1.Start();
+
+            //ListBox
+            
         }
 
         static public KeyPressEventArgs KeyPressSoloNumeros(KeyPressEventArgs e)
@@ -239,6 +252,83 @@ namespace Trabajo_Practico
         private void buttonGabinete_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FormGabinete(), sender);
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelDesktopPane_MouseMove(object sender, MouseEventArgs e)
+        {
+            //
+        }
+
+        private void panelDesktopPane_MouseUp(object sender, MouseEventArgs e)
+        {
+            //
+        }
+
+        private void panelDesktopPane_MouseLeave(object sender, EventArgs e)
+        {
+            //
+        }   
+
+        public static void cambiarLabel()
+        {
+            if(seleccionMicroprocesadorDouble != 0)
+            {
+                //label11.Text = seleccionMicroprocesador1.ToString();
+            }
+        }
+
+        private void Store_MouseMove(object sender, MouseEventArgs e)
+        {
+            //
+        }
+
+        private void Store_MouseLeave(object sender, EventArgs e)
+        {
+            //
+        }
+
+        public void anadirListBox()
+        {
+            if (seleccionMicroprocesadorString != "")
+            {
+                //listBox1.Items.Add(seleccionMicroprocesadorString);
+            }
+            seleccionMicroprocesadorString = "";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(seleccionMicroprocesadorDouble != 0)
+            {
+                labelMicroprocesadorPrecio.Text = "$" + seleccionMicroprocesadorDouble.ToString();
+            }
+
+            if(seleccionMicroprocesadorString != "")
+            {
+                labelMicroprocesador.Text = seleccionMicroprocesadorString;
+            }
+
+            if (seleccionMotherboardDouble != 0)
+            {
+                labelMotherboardPrecio.Text = "$" + seleccionMotherboardDouble.ToString();
+            }
+
+            if (seleccionMotherboardString != "")
+            {
+                labelMotherboard.Text = seleccionMotherboardString;
+            }
+
+            //anadirListBox();
         }
     }
 }

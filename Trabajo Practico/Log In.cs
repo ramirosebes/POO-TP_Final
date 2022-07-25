@@ -59,8 +59,8 @@ namespace Trabajo_Practico
                 }
                 else
                 {
-                    string email_global = txt_email.Text;
-                    Store frm = new Store(email_global);
+                    //string email_global = txt_email.Text;
+                    Store frm = new Store(/*email_global*/);
                     frm.ShowDialog();
                 }
             }

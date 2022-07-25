@@ -118,11 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="E6CGy3GXoAcMJfZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\E6CGy3GXoAcMJfZ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="intel_bx8071512600k_core_i5_12600k_8_core_lga-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intel_bx8071512600k_core_i5_12600k_8_core_lga-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Z690-AORUS-ULTRA-02-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Z690-AORUS-ULTRA-02-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G6900-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G6900-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="E6CGy3GXoAcMJfZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E6CGy3GXoAcMJfZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="450_1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\450_1000.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E6CGy3GXoAcMJfZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E6CGy3GXoAcMJfZ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B550I-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B550I-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="intel-core-i9-12900k-52-ghz-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intel-core-i9-12900k-52-ghz-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="g7400-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\g7400-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12100F-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12100F-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-transparent-computer-icons-share-icon-icon-design-cafe-shop-cdr-text-retail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-computer-icons-share-icon-icon-design-cafe-shop-cdr-text-retail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,13 +154,31 @@
   <data name="lock-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sed-18-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sed-18-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="191-intel-core-i7-12700k-50-ghz-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\191-intel-core-i7-12700k-50-ghz-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Z690PLUSWIFID4C-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Z690PLUSWIFID4C-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Z690-A1700b-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Z690-A1700b-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="900xrcm9jcshanxa_setting_fff_1_90_end_1000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\900xrcm9jcshanxa_setting_fff_1_90_end_1000.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="intel-core-i9-12900k-52-ghz-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intel-core-i9-12900k-52-ghz-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sed-18-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sed-18-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amd_100_100000061wof_ryzen_9_5900x_3_7_1598373-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amd_100_100000061wof_ryzen_9_5900x_3_7_1598373-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RYZEN5G1-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RYZEN5G1-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1000-51-500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1000-51-500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

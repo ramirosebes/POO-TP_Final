@@ -366,6 +366,48 @@
   <ItemGroup>
     <None Include="Resources\intel-core-i9-12900k-52-ghz-500x500.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191-intel-core-i7-12700k-50-ghz-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intel_bx8071512600k_core_i5_12600k_8_core_lga-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12100F-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g7400-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G6900-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amd_100_100000061wof_ryzen_9_5900x_3_7_1598373-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\450_1000.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RYZEN5G1-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z690-AORUS-ULTRA-02-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z690PLUSWIFID4C-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z690-A1700b-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B550I-500x500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\900xrcm9jcshanxa_setting_fff_1_90_end_1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000-51-500x500.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

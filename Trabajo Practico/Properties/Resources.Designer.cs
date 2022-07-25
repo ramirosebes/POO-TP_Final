@@ -63,6 +63,76 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_51_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("1000-51-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _12100F_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("12100F-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _191_intel_core_i7_12700k_50_ghz_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("191-intel-core-i7-12700k-50-ghz-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _450_1000 {
+            get {
+                object obj = ResourceManager.GetObject("450_1000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _900xrcm9jcshanxa_setting_fff_1_90_end_1000 {
+            get {
+                object obj = ResourceManager.GetObject("900xrcm9jcshanxa_setting_fff_1_90_end_1000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap amd_100_100000061wof_ryzen_9_5900x_3_7_1598373_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("amd_100_100000061wof_ryzen_9_5900x_3_7_1598373-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap B550I_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("B550I-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap E6CGy3GXoAcMJfZ {
             get {
                 object obj = ResourceManager.GetObject("E6CGy3GXoAcMJfZ", resourceCulture);
@@ -76,6 +146,36 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap E6CGy3GXoAcMJfZ1 {
             get {
                 object obj = ResourceManager.GetObject("E6CGy3GXoAcMJfZ1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G6900_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("G6900-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap g7400_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("g7400-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intel_bx8071512600k_core_i5_12600k_8_core_lga_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("intel_bx8071512600k_core_i5_12600k_8_core_lga-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +213,16 @@ namespace Trabajo_Practico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RYZEN5G1_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("RYZEN5G1-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sed_18_512 {
             get {
                 object obj = ResourceManager.GetObject("Sed-18-512", resourceCulture);
@@ -126,6 +236,36 @@ namespace Trabajo_Practico.Properties {
         internal static System.Drawing.Bitmap Untitled_1 {
             get {
                 object obj = ResourceManager.GetObject("Untitled-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Z690_A1700b_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("Z690-A1700b-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Z690_AORUS_ULTRA_02_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("Z690-AORUS-ULTRA-02-500x500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Z690PLUSWIFID4C_500x500 {
+            get {
+                object obj = ResourceManager.GetObject("Z690PLUSWIFID4C-500x500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
