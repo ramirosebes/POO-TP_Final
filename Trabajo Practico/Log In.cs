@@ -26,6 +26,8 @@ namespace Trabajo_Practico
             txt_email.Clear();
             txt_contrasena.Clear();
         }
+        //PC--> "Data Source=DESKTOP-59EHRTN;Initial Catalog=dbpractica;Integrated Security=True"
+        //NoteBook --> @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True"
 
         static public string conexion_database = "Data Source=DESKTOP-59EHRTN;Initial Catalog=dbpractica;Integrated Security=True";
         static public string email_global;

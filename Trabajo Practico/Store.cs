@@ -54,6 +54,8 @@ namespace Trabajo_Practico
 
         private void Store_Load(object sender, EventArgs e)
         {
+            //Utilizar 1 en la PC
+            //Utilizar 0 en la NoteBook
             this.Location = Screen.AllScreens[1].WorkingArea.Location;
 
             //Timer
