@@ -35,7 +35,6 @@
             this.panelRightBorder = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelBottomBorder = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.buttonVolverAtras = new System.Windows.Forms.Button();
@@ -97,6 +96,7 @@
             this.panelLeftMenu = new System.Windows.Forms.Panel();
             this.panelTopInicio = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonNombreEmpresa = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelCarrito.SuspendLayout();
@@ -151,8 +151,8 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panelTitleBar.Controls.Add(this.buttonNombreEmpresa);
             this.panelTitleBar.Controls.Add(this.button1);
-            this.panelTitleBar.Controls.Add(this.label1);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(10, 10);
             this.panelTitleBar.Name = "panelTitleBar";
@@ -176,20 +176,6 @@
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.label1.Size = new System.Drawing.Size(95, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NombreEmpresa";
             // 
             // panelBottomBorder
             // 
@@ -216,6 +202,7 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(141, 675);
             this.panelMenu.TabIndex = 20;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // buttonVolverAtras
             // 
@@ -365,6 +352,7 @@
             // 
             this.buttonVacio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonVacio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonVacio.Enabled = false;
             this.buttonVacio.FlatAppearance.BorderSize = 0;
             this.buttonVacio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVacio.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -958,6 +946,21 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // buttonNombreEmpresa
+            // 
+            this.buttonNombreEmpresa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonNombreEmpresa.FlatAppearance.BorderSize = 0;
+            this.buttonNombreEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNombreEmpresa.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNombreEmpresa.ForeColor = System.Drawing.Color.White;
+            this.buttonNombreEmpresa.Location = new System.Drawing.Point(0, 0);
+            this.buttonNombreEmpresa.Name = "buttonNombreEmpresa";
+            this.buttonNombreEmpresa.Size = new System.Drawing.Size(116, 27);
+            this.buttonNombreEmpresa.TabIndex = 23;
+            this.buttonNombreEmpresa.Text = "NombreEmpresa";
+            this.buttonNombreEmpresa.UseVisualStyleBackColor = true;
+            this.buttonNombreEmpresa.Click += new System.EventHandler(this.buttonNombreEmpresa_Click);
+            // 
             // Store
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -973,7 +976,6 @@
             this.MouseLeave += new System.EventHandler(this.Store_MouseLeave);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Store_MouseMove);
             this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelCarrito.ResumeLayout(false);
             this.panelCarrito.PerformLayout();
@@ -1000,7 +1002,6 @@
         private System.Windows.Forms.Panel panelLeftBorder;
         private System.Windows.Forms.Panel panelRightBorder;
         private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelBottomBorder;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button buttonVacio;
@@ -1063,5 +1064,6 @@
         public System.Windows.Forms.Label labelMotherboardPrecio;
         private System.Windows.Forms.Label labelMotherboard;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button buttonNombreEmpresa;
     }
 }

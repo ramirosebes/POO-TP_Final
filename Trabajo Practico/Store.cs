@@ -286,16 +286,55 @@ namespace Trabajo_Practico
 
         private void buttonPay_Click(object sender, EventArgs e)
         {
-            DialogResult mensajeCompra = MessageBox.Show("Esta seguro que desea realizar la compra?","Atencion",MessageBoxButtons.YesNo,MessageBoxIcon.Information);
-            if (mensajeCompra == DialogResult.Yes)
+            if (labelMicroprocesador.Text == "")
             {
-                ordenCompraRegistro();
-                enviarEmail();
-                Application.Exit();
+                MessageBox.Show("Por favor escoga un microprocesador", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (mensajeCompra == DialogResult.No)
+            else if (labelMotherboard.Text == "")
             {
-                
+                MessageBox.Show("Por favor escoga una motherboard", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            /*else if (labelMicroprocesador.Text == "Micro Intel Celeron G6900 LGA1700" || labelMicroprocesador.Text == "Micro Intel Pentium G7400 LGA1700" || labelMicroprocesador.Text == "Micro Intel Core i3 12100 LGA1700" || labelMicroprocesador.Text == "Micro Intel Core i5 12600K LGA1700" || labelMicroprocesador.Text == "Micro Intel Core i7 12700K LGA1700" || labelMicroprocesador.Text == "Micro Intel Core i9 12900K LGA1700" && labelMotherboard.Text == "Mother Asus Prime X570-P AM4" || labelMotherboard.Text == "Mother Gigabyte B550 Aorus Elite V2 AM4" || labelMotherboard.Text == "Mother Gigabyte B550I Aorus Pro AX AM4")
+            {
+                MessageBox.Show("El microprocesador y la motherboard seleccionados, no son compatibles", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
+            /*else if (labelMicroprocesador.Text == "Micro Amd Ryzen 5 5600G Vega 7 AM4" || labelMicroprocesador.Text == "Micro AMD Ryzen 7 5800X3D AM4" || labelMicroprocesador.Text == "Micro AMD Ryzen 9 5900X AM4" && labelMotherboard.Text == "Mother Asus Prime Z690-A LGA1700" || labelMotherboard.Text == "Mother Asus TUF Z690-Plus Wifi D4 LGA1700" || labelMotherboard.Text == "Mother Gigabyte Z690 Aorus Ultra LGA1700")
+            {
+                MessageBox.Show("El microprocesador y la motherboard seleccionados, no son compatibles", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
+            else if (labelMemoria.Text == "")
+            {
+                MessageBox.Show("Por favor escoga una memoria", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (labelPlacaDeVideo.Text == "")
+            {
+                MessageBox.Show("Por favor escoga una placa de video", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (labelAlmacenamiento.Text == "")
+            {
+                MessageBox.Show("Por favor escoga una unidad de almacenamiento", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (labelFuente.Text == "")
+            {
+                MessageBox.Show("Por favor escoga una fuente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (labelGabinete.Text == "")
+            {
+                MessageBox.Show("Por favor escoga un gabinete", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult mensajeCompra = MessageBox.Show("Esta seguro que desea realizar la compra?", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (mensajeCompra == DialogResult.Yes)
+                {
+                    ordenCompraRegistro();
+                    enviarEmail();
+                    Application.Exit();
+                }
+                else if (mensajeCompra == DialogResult.No)
+                {
+
+                }
             }
         }
 
@@ -738,6 +777,16 @@ namespace Trabajo_Practico
         {
             labelGabinete.ForeColor = SystemColors.ControlText;
             labelGabinetePrecio.ForeColor = SystemColors.ControlText;
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+            //
+        }
+
+        private void buttonNombreEmpresa_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormInicio(), sender);
         }
     }
 }
