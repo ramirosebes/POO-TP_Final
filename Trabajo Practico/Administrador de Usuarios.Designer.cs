@@ -91,6 +91,7 @@
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(163, 14);
             this.txt_email.TabIndex = 3;
+            this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
             // 
             // lbl_nombre
             // 
@@ -350,6 +351,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(749, 468);
+            this.Controls.Add(this.txt_contrasena);
             this.Controls.Add(this.panelMove);
             this.Controls.Add(this.lvl_volver_atras);
             this.Controls.Add(this.lbl_exit);
@@ -364,7 +366,6 @@
             this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.lbl_contrasena);
-            this.Controls.Add(this.txt_contrasena);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_insertar);
             this.Controls.Add(this.lbl_email);

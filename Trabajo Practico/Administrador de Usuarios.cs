@@ -28,7 +28,8 @@ namespace Trabajo_Practico
         {
             //Inicializacion
             InitializeComponent();
-
+            txt_nombre.BringToFront();
+            txt_contrasena.BringToFront();
 
             //Variable global de conexion
             this.conexion_database = conexion_database;
@@ -526,7 +527,7 @@ namespace Trabajo_Practico
         private void dgv_clientes_RowLeave(object sender, DataGridViewCellEventArgs e)
         {
             //Si selecciona otro Row saca la accion que se esta ejecutando en ese momento
-            btn_insertar.Enabled = false;
+            /*btn_insertar.Enabled = false;
             btn_insertar.Visible = false;
             btn_modificar.Enabled = false;
             btn_modificar.Visible = false;
@@ -534,7 +535,7 @@ namespace Trabajo_Practico
             txt_nombre.Enabled = false;
             txt_apellido.Enabled = false;
             txt_email.Enabled = false;
-            txt_contrasena.Enabled = false;
+            txt_contrasena.Enabled = false;*/
         }
 
         private void panelMove_MouseDown(object sender, MouseEventArgs e)
@@ -568,6 +569,21 @@ namespace Trabajo_Practico
                 cadena.AppendFormat("{0:x2}", i);
             }
             return cadena.ToString();
+        }
+
+        private void txt_email_TextChanged(object sender, EventArgs e)
+        {
+            //Si selecciona otro Row saca la accion que se esta ejecutando en ese momento
+            //Nueva solucion
+            btn_insertar.Enabled = false;
+            btn_insertar.Visible = false;
+            btn_modificar.Enabled = false;
+            btn_modificar.Visible = false;
+            txt_id.Enabled = false;
+            txt_nombre.Enabled = false;
+            txt_apellido.Enabled = false;
+            txt_email.Enabled = false;
+            txt_contrasena.Enabled = false;
         }
     }
 }

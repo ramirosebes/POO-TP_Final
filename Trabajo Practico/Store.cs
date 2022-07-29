@@ -89,7 +89,7 @@ namespace Trabajo_Practico
             string email, contrasena;
             email = "uaiprogramacion@outlook.com";
             contrasena = "programacionpruebas321";
-            string path = @"C:\Users\ramir\Desktop\Trabajo Practico\Orden de compra\" + "Orden de compra" + ".txt"; // Establecer nueva ruta
+            string path = @"D:\Juegos y Apps\Escritorio\Programacin\C#\Programacion Orientada a Objetos\Trabajo Practico\Orden de compra\" + "Orden de compra" + ".txt"; // Establecer nueva ruta
 
             //Body
             string subject = "Orden de compra";
@@ -133,7 +133,7 @@ namespace Trabajo_Practico
 
         public void ordenCompraRegistro()
         {
-            string PATHLOG = @"C:\Users\ramir\Desktop\Trabajo Practico\Orden de compra"; //Establecer la ruta de la carpeta donde se quiere crear
+            string PATHLOG = @"D:\Juegos y Apps\Escritorio\Programacin\C#\Programacion Orientada a Objetos\Trabajo Practico\Orden de compra"; //Establecer la ruta de la carpeta donde se quiere crear
             string ARCHIVOLOG = "Orden de compra" + ".txt";
 
             StreamWriter sw;
