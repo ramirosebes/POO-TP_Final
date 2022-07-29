@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Net.Mail;
+using System.Security.Cryptography;
 
 namespace Trabajo_Practico
 {
@@ -17,6 +18,7 @@ namespace Trabajo_Practico
     {
         //Variable Global
         public string conexion_database;
+        string hashCode;
 
         //Move Bar
         int mov;
@@ -72,17 +74,26 @@ namespace Trabajo_Practico
 
         public void registro()
         {
-            using (SqlConnection cn = new SqlConnection(conexion_database))
+            hashCode = GetSHA1(txt_contrasena.Text);
+
+            try
             {
-                SqlCommand cmd = new SqlCommand("insert into usuarios(nombre,apellido,email,contrasena) values ('"+ txt_nombre.Text +"','"+ txt_apellido.Text +"','"+ txt_email.Text +"','"+ txt_contrasena.Text +"');", cn);
-                cmd.CommandType = CommandType.Text;
-                cn.Open();
-                cmd.ExecuteNonQuery();
-                DialogResult MensajeFinal = MessageBox.Show("Registro Exitoso.", "Importante", MessageBoxButtons.OK);
-                if (MensajeFinal == DialogResult.OK)
+                using (SqlConnection cn = new SqlConnection(conexion_database))
                 {
-                    this.Close();
+                    SqlCommand cmd = new SqlCommand("insert into usuarios(nombre,apellido,email,contrasena) values ('" + txt_nombre.Text + "','" + txt_apellido.Text + "','" + txt_email.Text + "','" + hashCode + "');", cn);
+                    cmd.CommandType = CommandType.Text;
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    DialogResult MensajeFinal = MessageBox.Show("Registro Exitoso.", "Importante", MessageBoxButtons.OK);
+                    if (MensajeFinal == DialogResult.OK)
+                    {
+                        this.Close();
+                    }
                 }
+            }
+            catch
+            {
+                MessageBox.Show("No se pudo realizar el registro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -253,6 +264,19 @@ namespace Trabajo_Practico
         private void panelMove_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
+        }
+
+        public static string GetSHA1(String texto)
+        {
+            SHA1 sha1 = SHA1CryptoServiceProvider.Create();
+            Byte[] textOriginal = ASCIIEncoding.Default.GetBytes(texto);
+            Byte[] hash = sha1.ComputeHash(textOriginal);
+            StringBuilder cadena = new StringBuilder();
+            foreach (byte i in hash)
+            {
+                cadena.AppendFormat("{0:x2}", i);
+            }
+            return cadena.ToString();
         }
     }
 }

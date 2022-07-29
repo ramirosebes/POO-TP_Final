@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Security.Cryptography;
 
 namespace Trabajo_Practico
 {
@@ -19,7 +20,7 @@ namespace Trabajo_Practico
         int mov;
         int movX;
         int movY;
-
+        
         public Log_In()
         {
             InitializeComponent();
@@ -32,7 +33,8 @@ namespace Trabajo_Practico
         //PC--> "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True"
         //NoteBook --> @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True"
         static public string email_global;
-        
+        string hashCode;
+
 
         private void btn_iniciarSesion_Click(object sender, EventArgs e)
         {
@@ -81,10 +83,12 @@ namespace Trabajo_Practico
 
         public bool login()
         {
+            hashCode = GetSHA1(txt_contrasena.Text);
+
             //Conexion con SQL
             SqlConnection cn = new SqlConnection(conexion_database); //Crea la instancia SQL
             cn.Open(); //Abre la conexion
-            SqlCommand cmd = new SqlCommand("select * from usuarios where email = '" + txt_email.Text + "' and contrasena = '" + txt_contrasena.Text + "'", cn); //Crea la instancia "cmd" con el comando para SQL
+            SqlCommand cmd = new SqlCommand("select * from usuarios where email = '" + txt_email.Text + "' and contrasena = '" + hashCode + "'", cn); //Crea la instancia "cmd" con el comando para SQL
             SqlDataReader registro = cmd.ExecuteReader(); //Ejecuta el comando
 
             if (registro.Read())
@@ -161,6 +165,19 @@ namespace Trabajo_Practico
         {
             //Permite mover el form seleccionando el panel
             mov = 0;
+        }
+
+        public static string GetSHA1(String texto)
+        {
+            SHA1 sha1 = SHA1CryptoServiceProvider.Create();
+            Byte[] textOriginal = ASCIIEncoding.Default.GetBytes(texto);
+            Byte[] hash = sha1.ComputeHash(textOriginal);
+            StringBuilder cadena = new StringBuilder();
+            foreach (byte i in hash)
+            {
+                cadena.AppendFormat("{0:x2}", i);
+            }
+            return cadena.ToString();
         }
     }
 }

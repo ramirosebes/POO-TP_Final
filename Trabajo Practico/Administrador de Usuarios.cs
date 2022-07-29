@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using System.Security.Cryptography;
 
 namespace Trabajo_Practico
 {
@@ -16,6 +17,7 @@ namespace Trabajo_Practico
     {
         //Varaiable Global
         public string conexion_database;
+        string hashCode;
 
         //Move Bar
         int mov;
@@ -83,10 +85,11 @@ namespace Trabajo_Practico
             }
             else
             {
+                hashCode = GetSHA1(txt_contrasena.Text);
                 //Inserta cliente
                 using (SqlConnection cn = new SqlConnection(conexion_database))
                 {
-                    SqlCommand cmd = new SqlCommand("insert into usuarios(nombre,apellido,email,contrasena) values ('" + txt_nombre.Text + "','" + txt_apellido.Text + "','" + txt_email.Text + "','" + txt_contrasena.Text + "');", cn);
+                    SqlCommand cmd = new SqlCommand("insert into usuarios(nombre,apellido,email,contrasena) values ('" + txt_nombre.Text + "','" + txt_apellido.Text + "','" + txt_email.Text + "','" + hashCode + "');", cn);
                     cmd.CommandType = CommandType.Text;
                     cn.Open();
                     cmd.ExecuteNonQuery();
@@ -165,11 +168,12 @@ namespace Trabajo_Practico
             }*/
             else
             {
+                hashCode = GetSHA1(txt_contrasena.Text);
 
                 //Modifica cliente
                 using (SqlConnection cn = new SqlConnection(conexion_database))
                 {
-                    SqlCommand cmd = new SqlCommand("update usuarios set nombre = '" + txt_nombre.Text + "', apellido = '" + txt_apellido.Text + "', email = '" + txt_email.Text + "', contrasena = '" + txt_contrasena.Text + "' where id = " + txt_id.Text + ";", cn);
+                    SqlCommand cmd = new SqlCommand("update usuarios set nombre = '" + txt_nombre.Text + "', apellido = '" + txt_apellido.Text + "', email = '" + txt_email.Text + "', contrasena = '" + hashCode + "' where id = " + txt_id.Text + ";", cn);
                     cmd.CommandType = CommandType.Text;
                     cn.Open();
                     cmd.ExecuteNonQuery();
@@ -551,6 +555,19 @@ namespace Trabajo_Practico
         private void panelMove_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
+        }
+
+        public static string GetSHA1(String texto)
+        {
+            SHA1 sha1 = SHA1CryptoServiceProvider.Create();
+            Byte[] textOriginal = ASCIIEncoding.Default.GetBytes(texto);
+            Byte[] hash = sha1.ComputeHash(textOriginal);
+            StringBuilder cadena = new StringBuilder();
+            foreach (byte i in hash)
+            {
+                cadena.AppendFormat("{0:x2}", i);
+            }
+            return cadena.ToString();
         }
     }
 }
