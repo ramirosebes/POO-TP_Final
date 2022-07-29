@@ -26,7 +26,7 @@ namespace Trabajo_Practico
         public Register(string conexion_database)
         {
             InitializeComponent();
-            this.conexion_database = conexion_database;
+            this.conexion_database = conexion_database; //Obtiene la conexion de la base de datos
         }
 
         private void btn_confirmar_Click(object sender, EventArgs e)
@@ -151,6 +151,7 @@ namespace Trabajo_Practico
 
         private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Solo letras
             if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = false;
@@ -171,6 +172,7 @@ namespace Trabajo_Practico
 
         private void txt_apellido_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Solo letras
             if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = false;
@@ -202,7 +204,7 @@ namespace Trabajo_Practico
             int port = 587;
             string host = "smtp.office365.com";
 
-            MailMessage msg = new MailMessage();
+            MailMessage msg = new MailMessage(); //Crea la instancia de msg
 
             msg.To.Add(txt_email.Text);
             msg.Subject = subject;

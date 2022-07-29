@@ -34,6 +34,7 @@
             this.panelLeftBorder = new System.Windows.Forms.Panel();
             this.panelRightBorder = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.buttonNombreEmpresa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelBottomBorder = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -96,7 +97,6 @@
             this.panelLeftMenu = new System.Windows.Forms.Panel();
             this.panelTopInicio = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.buttonNombreEmpresa = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelCarrito.SuspendLayout();
@@ -162,6 +162,21 @@
             this.panelTitleBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseMove_1);
             this.panelTitleBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseUp_1);
             // 
+            // buttonNombreEmpresa
+            // 
+            this.buttonNombreEmpresa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonNombreEmpresa.FlatAppearance.BorderSize = 0;
+            this.buttonNombreEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNombreEmpresa.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNombreEmpresa.ForeColor = System.Drawing.Color.White;
+            this.buttonNombreEmpresa.Location = new System.Drawing.Point(0, 0);
+            this.buttonNombreEmpresa.Name = "buttonNombreEmpresa";
+            this.buttonNombreEmpresa.Size = new System.Drawing.Size(116, 27);
+            this.buttonNombreEmpresa.TabIndex = 0;
+            this.buttonNombreEmpresa.Text = "NombreEmpresa";
+            this.buttonNombreEmpresa.UseVisualStyleBackColor = true;
+            this.buttonNombreEmpresa.Click += new System.EventHandler(this.buttonNombreEmpresa_Click);
+            // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -172,7 +187,7 @@
             this.button1.Location = new System.Drawing.Point(1136, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(28, 27);
-            this.button1.TabIndex = 22;
+            this.button1.TabIndex = 12;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -215,7 +230,7 @@
             this.buttonVolverAtras.Location = new System.Drawing.Point(0, 601);
             this.buttonVolverAtras.Name = "buttonVolverAtras";
             this.buttonVolverAtras.Size = new System.Drawing.Size(141, 37);
-            this.buttonVolverAtras.TabIndex = 9;
+            this.buttonVolverAtras.TabIndex = 10;
             this.buttonVolverAtras.Text = "Volver Atras";
             this.buttonVolverAtras.UseVisualStyleBackColor = true;
             this.buttonVolverAtras.Click += new System.EventHandler(this.buttonVolverAtras_Click);
@@ -231,7 +246,7 @@
             this.buttonSalir.Location = new System.Drawing.Point(0, 638);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(141, 37);
-            this.buttonSalir.TabIndex = 8;
+            this.buttonSalir.TabIndex = 11;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
@@ -825,7 +840,7 @@
             this.buttonClearAll.Location = new System.Drawing.Point(189, 19);
             this.buttonClearAll.Name = "buttonClearAll";
             this.buttonClearAll.Size = new System.Drawing.Size(62, 23);
-            this.buttonClearAll.TabIndex = 23;
+            this.buttonClearAll.TabIndex = 8;
             this.buttonClearAll.Text = "Clear All";
             this.buttonClearAll.UseVisualStyleBackColor = false;
             this.buttonClearAll.Click += new System.EventHandler(this.button2_Click);
@@ -850,7 +865,7 @@
             this.buttonPay.Location = new System.Drawing.Point(10, 628);
             this.buttonPay.Name = "buttonPay";
             this.buttonPay.Size = new System.Drawing.Size(257, 37);
-            this.buttonPay.TabIndex = 22;
+            this.buttonPay.TabIndex = 9;
             this.buttonPay.Text = "Pagar";
             this.buttonPay.UseVisualStyleBackColor = false;
             this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
@@ -945,21 +960,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // buttonNombreEmpresa
-            // 
-            this.buttonNombreEmpresa.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonNombreEmpresa.FlatAppearance.BorderSize = 0;
-            this.buttonNombreEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNombreEmpresa.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNombreEmpresa.ForeColor = System.Drawing.Color.White;
-            this.buttonNombreEmpresa.Location = new System.Drawing.Point(0, 0);
-            this.buttonNombreEmpresa.Name = "buttonNombreEmpresa";
-            this.buttonNombreEmpresa.Size = new System.Drawing.Size(116, 27);
-            this.buttonNombreEmpresa.TabIndex = 23;
-            this.buttonNombreEmpresa.Text = "NombreEmpresa";
-            this.buttonNombreEmpresa.UseVisualStyleBackColor = true;
-            this.buttonNombreEmpresa.Click += new System.EventHandler(this.buttonNombreEmpresa_Click);
             // 
             // Store
             // 

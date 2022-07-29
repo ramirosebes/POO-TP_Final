@@ -195,7 +195,7 @@
             this.label4.Location = new System.Drawing.Point(91, 423);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 23);
-            this.label4.TabIndex = 26;
+            this.label4.TabIndex = 5;
             this.label4.Text = "Volver atras";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 

@@ -26,15 +26,17 @@ namespace Trabajo_Practico
             txt_email.Clear();
             txt_contrasena.Clear();
         }
+        
+        //Variable Global
+        static public string conexion_database = "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True";
         //PC--> "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True"
         //NoteBook --> @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True"
-
-        static public string conexion_database = "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True";
         static public string email_global;
         
 
         private void btn_iniciarSesion_Click(object sender, EventArgs e)
         {
+            //Validaciones
             string email = txt_email.Text;
 
             if (txt_email.Text == "")
@@ -55,7 +57,7 @@ namespace Trabajo_Practico
             }
             else
             {
-                if(txt_email.Text == "admin" && txt_contrasena.Text == "12345")
+                if(txt_email.Text == "admin" && txt_contrasena.Text == "admin")
                 {
                     Administrador_de_Usuarios frm1 = new Administrador_de_Usuarios(conexion_database);
                     frm1.ShowDialog();
@@ -72,24 +74,27 @@ namespace Trabajo_Practico
 
         private void lbl_crearCuenta_Click(object sender, EventArgs e)
         {
+            //Abre el form de Registro
             Register frm = new Register(conexion_database);   
             frm.ShowDialog();
         }
 
         public bool login()
         {
-            SqlConnection cn = new SqlConnection(conexion_database);
-
-            cn.Open();
-            SqlCommand cmd = new SqlCommand("select * from usuarios where email = '" + txt_email.Text + "' and contrasena = '" + txt_contrasena.Text + "'", cn);
-            SqlDataReader registro = cmd.ExecuteReader();
+            //Conexion con SQL
+            SqlConnection cn = new SqlConnection(conexion_database); //Crea la instancia SQL
+            cn.Open(); //Abre la conexion
+            SqlCommand cmd = new SqlCommand("select * from usuarios where email = '" + txt_email.Text + "' and contrasena = '" + txt_contrasena.Text + "'", cn); //Crea la instancia "cmd" con el comando para SQL
+            SqlDataReader registro = cmd.ExecuteReader(); //Ejecuta el comando
 
             if (registro.Read())
             {
+                //Encontro el registro
                 return true;
             }
             else
             {
+                //No encontro el registro
                 return false;
             }
 
@@ -130,16 +135,6 @@ namespace Trabajo_Practico
             //
         }
 
-        private void panel_nombre_Paint(object sender, PaintEventArgs e)
-        {
-            //
-        }
-
-        private void btn_cerrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -147,6 +142,7 @@ namespace Trabajo_Practico
 
         private void panel3_MouseDown(object sender, MouseEventArgs e)
         {
+            //Permite mover el form seleccionando el panel
             mov = 1;
             movX = e.X;
             movY = e.Y;
@@ -154,6 +150,7 @@ namespace Trabajo_Practico
 
         private void panel3_MouseMove(object sender, MouseEventArgs e)
         {
+            //Permite mover el form seleccionando el panel
             if (mov == 1)
             {
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
@@ -162,6 +159,7 @@ namespace Trabajo_Practico
 
         private void panel3_MouseUp(object sender, MouseEventArgs e)
         {
+            //Permite mover el form seleccionando el panel
             mov = 0;
         }
     }

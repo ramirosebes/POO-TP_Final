@@ -47,9 +47,7 @@ namespace Trabajo_Practico
         public Store(/*string email_global*/)
         {
             InitializeComponent();
-            OpenChildForm(new Forms.FormInicio(), sender_auxiliar);
-            //Variable Global
-            
+            OpenChildForm(new Forms.FormInicio(), sender_auxiliar); 
         }
 
         private void Store_Load(object sender, EventArgs e)
@@ -59,14 +57,12 @@ namespace Trabajo_Practico
             this.Location = Screen.AllScreens[1].WorkingArea.Location;
 
             //Timer
-            timer1.Start();
-
-            //ListBox
-            
+            timer1.Start();      
         }
 
         static public KeyPressEventArgs KeyPressSoloNumeros(KeyPressEventArgs e)
         {
+            //Solo numeros
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = false;
@@ -186,7 +182,7 @@ namespace Trabajo_Practico
             this.panelDesktopPane.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblTitle.Text = childForm.Text;
+            //lblTitle.Text = childForm.Text;
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
@@ -281,7 +277,7 @@ namespace Trabajo_Practico
 
         private void label11_Click(object sender, EventArgs e)
         {
-
+            //Creado por error
         }
 
         private void buttonPay_Click(object sender, EventArgs e)
@@ -340,35 +336,27 @@ namespace Trabajo_Practico
 
         private void panelDesktopPane_MouseMove(object sender, MouseEventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void panelDesktopPane_MouseUp(object sender, MouseEventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void panelDesktopPane_MouseLeave(object sender, EventArgs e)
         {
-            //
-        }   
-
-        public static void cambiarLabel()
-        {
-            if(seleccionMicroprocesadorDouble != 0)
-            {
-                //label11.Text = seleccionMicroprocesador1.ToString();
-            }
+            //Creado por error
         }
 
         private void Store_MouseMove(object sender, MouseEventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void Store_MouseLeave(object sender, EventArgs e)
         {
-            //
+            //Creado por error
         }
 
         public void anadirListBox()
@@ -781,7 +769,7 @@ namespace Trabajo_Practico
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void buttonNombreEmpresa_Click(object sender, EventArgs e)

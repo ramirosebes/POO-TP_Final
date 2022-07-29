@@ -27,6 +27,7 @@ namespace Trabajo_Practico
             //Inicializacion
             InitializeComponent();
 
+
             //Variable global de conexion
             this.conexion_database = conexion_database;
 
@@ -268,22 +269,6 @@ namespace Trabajo_Practico
             }
         }
 
-        private void btn_mostrar_Click(object sender, EventArgs e)
-        {
-            //Ya no se usa
-            //Actualiza la tabla
-            DataTable dt = new DataTable();
-            using (SqlConnection cn = new SqlConnection(conexion_database))
-            {
-                cn.Open();
-                SqlDataAdapter da = new SqlDataAdapter("select * from usuarios;", cn);
-                da.SelectCommand.CommandType = CommandType.Text;
-                da.Fill(dt);
-                dgv_clientes.DataSource = dt;
-                cn.Close();
-            }
-        }
-
         static public bool syntaxis_email(EventArgs e, string Mail)//validacion formato de direccion de e-mail
         {
             //Corrobora que la sintaxis del email este correcta
@@ -403,7 +388,7 @@ namespace Trabajo_Practico
 
         private void dataGridView1_MouseUp(object sender, MouseEventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
@@ -415,12 +400,14 @@ namespace Trabajo_Practico
             txt_email.Text = dgv_clientes.CurrentRow.Cells[3].Value.ToString();
             txt_contrasena.Text = dgv_clientes.CurrentRow.Cells[4].Value.ToString();
 
+            //Crea el Menu
             if (e.Button == MouseButtons.Right)
             {
                 ContextMenuStrip menu = new ContextMenuStrip();
                 int posicion = dgv_clientes.HitTest(e.X, e.Y).RowIndex;
                 if (posicion > -1)
                 {
+                    //Crea las opciones del Menu
                     menu.Items.Add("Insertar").Name = "Insertar" + posicion;
                     menu.Items.Add("Modificar").Name = "Modificar" + posicion;
                     menu.Items.Add("Eliminar").Name = "Eliminar" + posicion;
@@ -461,7 +448,14 @@ namespace Trabajo_Practico
                 DialogResult MensajeFinal = MessageBox.Show("Esta seguro que desea eliminar a "+txt_nombre.Text+" "+txt_apellido.Text+".", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (MensajeFinal == DialogResult.Yes)
                 {
-                    eliminar_cliente();
+                    if (txt_email.Text != "admin" && txt_contrasena.Text!= "admin")
+                    {
+                        eliminar_cliente();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este usuario no se puede eliminar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
         }
@@ -502,12 +496,12 @@ namespace Trabajo_Practico
 
         private void Administrador_de_Usuarios_Load(object sender, EventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -522,11 +516,12 @@ namespace Trabajo_Practico
 
         private void btn_modificar_EnabledChanged(object sender, EventArgs e)
         {
-            //
+            //Creado por error
         }
 
         private void dgv_clientes_RowLeave(object sender, DataGridViewCellEventArgs e)
         {
+            //Si selecciona otro Row saca la accion que se esta ejecutando en ese momento
             btn_insertar.Enabled = false;
             btn_insertar.Visible = false;
             btn_modificar.Enabled = false;
