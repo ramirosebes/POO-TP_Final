@@ -28,10 +28,11 @@ namespace Trabajo_Practico
             txt_contrasena.Clear();
         }
         
-        //Variable Global
+        //Variable Global      
+        //PC
         static public string conexion_database = "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True";
-        //PC--> "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True"
-        //NoteBook --> @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True"
+        //NoteBook
+        //static public string conexion_database = @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True"
         static public string email_global;
         string hashCode;
 

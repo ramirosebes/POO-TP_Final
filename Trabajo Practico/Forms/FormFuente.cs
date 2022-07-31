@@ -66,7 +66,56 @@ namespace Trabajo_Practico.Forms
         private void label3_Click(object sender, EventArgs e)
         {
             Store.seleccionFuenteDouble = 90750.00;
-            Store.seleccionFuenteString = "Fuente Gigabyte Aorus P1200W LCD 80+Platinum";
+            Store.seleccionFuenteString = "Fuente Gigabyte Aorus P1200W LCD 80+Plat.";
+        }
+
+        //PictureBox
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Store.seleccionFuenteDouble = 29700.00;
+            Store.seleccionFuenteString = "Fuente Corsair RM850X White 80+Gold";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Store.seleccionFuenteDouble = 57750.00;
+            Store.seleccionFuenteString = "Fuente Corsair HX1000 80+ Platinum";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Store.seleccionFuenteDouble = 90750.00;
+            Store.seleccionFuenteString = "Fuente Gigabyte Aorus P1200W LCD 80+Plat.";
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            label1.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            label2.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            label3.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.ForeColor = SystemColors.ControlText;
         }
     }
 }

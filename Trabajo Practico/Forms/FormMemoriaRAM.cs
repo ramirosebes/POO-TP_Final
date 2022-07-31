@@ -112,5 +112,103 @@ namespace Trabajo_Practico.Forms
             Store.seleccionMemoriaDouble = 52800.00;
             Store.seleccionMemoriaString = "Memoria Corsair Dominator 32GB 5200Mhz";
         }
+
+        //PictureBox
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Store.seleccionMemoriaDouble = 7755.00;
+            Store.seleccionMemoriaString = "Memoria Corsair LPX 8GB DDR4 3200Mhz";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Store.seleccionMemoriaDouble = 18975.00;
+            Store.seleccionMemoriaString = "Memoria Corsair Pro SL 16GB 3200mhz";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Store.seleccionMemoriaDouble = 36300.00;
+            Store.seleccionMemoriaString = "Memoria Corsair TUF RGB 32GB 3200mhz";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Store.seleccionMemoriaDouble = 16170.00;
+            Store.seleccionMemoriaString = "Crucial Ballistix 8GB DDR5 5200Mhz";
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Store.seleccionMemoriaDouble = 28875.00;
+            Store.seleccionMemoriaString = "Memoria XPG Lancer RGB 16GB DDR5 5200Mhz";
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Store.seleccionMemoriaDouble = 52800.00;
+            Store.seleccionMemoriaString = "Memoria Corsair Dominator 32GB 5200Mhz";
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            label1.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            label2.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            label3.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox4_MouseMove(object sender, MouseEventArgs e)
+        {
+            label4.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox4_MouseLeave(object sender, EventArgs e)
+        {
+            label4.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox5_MouseMove(object sender, MouseEventArgs e)
+        {
+            label5.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox5_MouseLeave(object sender, EventArgs e)
+        {
+            label5.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox6_MouseMove(object sender, MouseEventArgs e)
+        {
+            label6.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox6_MouseLeave(object sender, EventArgs e)
+        {
+            label6.ForeColor = SystemColors.ControlText;
+        }
     }
 }

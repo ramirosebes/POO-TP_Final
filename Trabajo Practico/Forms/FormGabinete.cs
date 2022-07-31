@@ -65,5 +65,55 @@ namespace Trabajo_Practico.Forms
             Store.seleccionGabineteDouble = 69960.001;
             Store.seleccionGabineteString = "Gabinete Corsair iCUE 7000X RGB Black";
         }
+
+        //PictureBox
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Store.seleccionGabineteDouble = 21450.00;
+            Store.seleccionGabineteString = "Gabinete Phanteks P200A DRGB ITX";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Store.seleccionGabineteDouble = 31350.00;
+            Store.seleccionGabineteString = "Gabinete DeepCool Matrexx 70 RGB 3F";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Store.seleccionGabineteDouble = 69960.001;
+            Store.seleccionGabineteString = "Gabinete Corsair iCUE 7000X RGB Black";
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            label1.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            label1.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            label2.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            label3.ForeColor = Color.FromArgb(0, 117, 214);
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.ForeColor = SystemColors.ControlText;
+        }
     }
 }

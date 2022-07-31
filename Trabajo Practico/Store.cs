@@ -54,7 +54,14 @@ namespace Trabajo_Practico
         {
             //Utilizar 1 en la PC
             //Utilizar 0 en la NoteBook
-            this.Location = Screen.AllScreens[1].WorkingArea.Location;
+            try
+            {
+                this.Location = Screen.AllScreens[1].WorkingArea.Location;
+            }
+            catch
+            {
+                this.Location = Screen.AllScreens[0].WorkingArea.Location;
+            }
 
             //Timer
             timer1.Start();      
