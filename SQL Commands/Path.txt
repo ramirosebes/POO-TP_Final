@@ -1,7 +1,0 @@
-//PC
-        static public string conexion_database = "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True";
-//NoteBook
-        //static public string conexion_database = @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True"
-
-email = "uaiprogramacion@outlook.com";
-contrasena = "programacionpruebas321";
