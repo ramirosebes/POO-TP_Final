@@ -189,3 +189,13 @@ C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Or
 C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Register.resources
 C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.Fody.CopyLocal.cache
 C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo Practico.csproj.CopyComplete
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormAlmacenamiento.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormFuente.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormGabinete.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormInicio.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormMemoriaRAM.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormMicroprocesador.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormMotherboard.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Forms.FormPlacaDeVideo.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Log_In.resources
+C:\Users\ramir\Personal\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Trabajo Practico\obj\Debug\Trabajo_Practico.Register.resources
