@@ -171,9 +171,9 @@
             this.buttonNombreEmpresa.ForeColor = System.Drawing.Color.White;
             this.buttonNombreEmpresa.Location = new System.Drawing.Point(0, 0);
             this.buttonNombreEmpresa.Name = "buttonNombreEmpresa";
-            this.buttonNombreEmpresa.Size = new System.Drawing.Size(116, 27);
+            this.buttonNombreEmpresa.Size = new System.Drawing.Size(63, 27);
             this.buttonNombreEmpresa.TabIndex = 0;
-            this.buttonNombreEmpresa.Text = "NombreEmpresa";
+            this.buttonNombreEmpresa.Text = "Dactilus";
             this.buttonNombreEmpresa.UseVisualStyleBackColor = true;
             this.buttonNombreEmpresa.Click += new System.EventHandler(this.buttonNombreEmpresa_Click);
             // 

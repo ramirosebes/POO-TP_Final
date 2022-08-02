@@ -27,7 +27,7 @@ namespace Trabajo_Practico
             txt_email.Clear();
             txt_contrasena.Clear();
         }
-        
+
         //Variable Global      
         //PC
         static public string conexion_database = "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True";

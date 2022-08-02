@@ -527,7 +527,7 @@ namespace Trabajo_Practico
         private void dgv_clientes_RowLeave(object sender, DataGridViewCellEventArgs e)
         {
             //Si selecciona otro Row saca la accion que se esta ejecutando en ese momento
-            /*btn_insertar.Enabled = false;
+            btn_insertar.Enabled = false;
             btn_insertar.Visible = false;
             btn_modificar.Enabled = false;
             btn_modificar.Visible = false;
@@ -535,7 +535,7 @@ namespace Trabajo_Practico
             txt_nombre.Enabled = false;
             txt_apellido.Enabled = false;
             txt_email.Enabled = false;
-            txt_contrasena.Enabled = false;*/
+            txt_contrasena.Enabled = false;
         }
 
         private void panelMove_MouseDown(object sender, MouseEventArgs e)
@@ -575,7 +575,7 @@ namespace Trabajo_Practico
         {
             //Si selecciona otro Row saca la accion que se esta ejecutando en ese momento
             //Nueva solucion
-            btn_insertar.Enabled = false;
+            /*btn_insertar.Enabled = false;
             btn_insertar.Visible = false;
             btn_modificar.Enabled = false;
             btn_modificar.Visible = false;
@@ -583,7 +583,7 @@ namespace Trabajo_Practico
             txt_nombre.Enabled = false;
             txt_apellido.Enabled = false;
             txt_email.Enabled = false;
-            txt_contrasena.Enabled = false;
+            txt_contrasena.Enabled = false;*/
         }
     }
 }
