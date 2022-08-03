@@ -94,8 +94,8 @@ namespace Trabajo_Practico
         {
             //Variables
             string email, contrasena;
-            email = "uaiprogramacion@outlook.com";
-            contrasena = "programacionpruebas321";
+            email = "email@outlook.com";
+            contrasena = "contrasenaEmail";
             string path = @"C:\Users\ramir\Dropbox\Materias\Segundo Año\Primer Cuatrimestre\Programacion Orientada a Objetos\Trabajo Practico\Orden de compra\" + "Orden de compra" + ".txt"; // Establecer nueva ruta
 
             //Body

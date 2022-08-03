@@ -206,8 +206,8 @@ namespace Trabajo_Practico
         {
             //Variables
             string email, contrasena;
-            email = "uaiprogramacion@outlook.com";
-            contrasena = "programacionpruebas321";
+            email = "email@outlook.com";
+            contrasena = "contrasenaEmail";
             
             //Body
             string subject = "Registro";
