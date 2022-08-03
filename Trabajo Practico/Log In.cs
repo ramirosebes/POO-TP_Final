@@ -30,9 +30,9 @@ namespace Trabajo_Practico
 
         //Variable Global      
         //PC
-        static public string conexion_database = "Data Source=DESKTOP-RAMIRO;Initial Catalog=dbpractica;Integrated Security=True";
+        static public string conexion_database = "";
         //NoteBook
-        //static public string conexion_database = @"Data Source=NOTEBOOK-RAMIRO\MSSQLSERVER01;Initial Catalog=dbpractica;Integrated Security=True";
+        //static public string conexion_database = @"";
         static public string email_global;
         string hashCode;
 
